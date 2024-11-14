@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MISTUDIU Kitchens & Closets</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="./img/icons/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"> -->
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="./lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="./lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet" />
+    <style>
+      @supports (position: absolute) {
+        #hotspots-container {
+          display: block !important;
+          max-height: none !important;
+        }
+
+        #fallback {
+          display: none;
+        }
+      }
+    </style>
+
+    <style>
+      /* Kitchen text styling */
+      .image-text {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        font-weight: bold;
+      }
+      .highlight {
+        font-weight: bold;
+        display: inline-block;
+        background: #ffffff;
+        color: #193549;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        animation: pulse 1.5s infinite;
+        cursor: pointer;
+      }
+
+      .highlight:hover {
+        background: #ece0e0;
+        color: #000000;
+      }
+
+      .hotspot-content {
+        position: absolute;
+        width: 40%;
+        left: 10%;
+        display: none;
+        padding: 1.5rem;
+        text-align: center;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Position content above respective labels */
+      #b1:hover ~ #content1 {
+        display: block;
+        bottom: 80%; /* Content above label 1 */
+        left: 50%;
+      }
+
+      #b2:hover ~ #content2 {
+        display: block;
+        bottom: 64%; /* Content above label 2 */
+      }
+
+      #b3:hover ~ #content3 {
+        display: block;
+        left: 55%;
+        bottom: 37%; /* Content above label 3 */
+      }
+
+      #b4:hover ~ #content4 {
+        display: block;
+        bottom: 37%; /* Content above label 3 */
+      }
+
+      #b5:hover ~ #content5 {
+        display: block;
+        left: 5%;
+        bottom: 37%; /* Content above label 3 */
+      }
+
+      /* Adjust positions for labels */
+      #b1 {
+        left: 73%;
+        top: 22%;
+      }
+
+      #b2 {
+        left: 24%;
+        top: 38%;
+      }
+
+      #b3 {
+        left: 67%;
+        top: 64%;
+      }
+
+      #b4 {
+        left: 25%;
+        top: 64%;
+      }
+
+      #b5 {
+        left: 46%;
+        top: 47%;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .text-grey {
+        color: #193549;
+      }
+
+      .rounded {
+        border-radius: 4px;
+      }
+
+      .shadow {
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+
+      .bg-white {
+        background: #000000;
+      }
+
+      .absolute {
+        position: absolute;
+      }
+
+      #hotspots1:checked ~ #content1,
+      #hotspots2:checked ~ #content2,
+      #hotspots3:checked ~ #content3,
+      #hotspots4:checked ~ #content4,
+      #hotspots5:checked ~ #content5 {
+        display: block;
+        margin: 2rem;
+        width: 90%;
+      }
+      @keyframes pulse {
+        from {
+          box-shadow: 0 0 0 0px #5f5f5f;
+        }
+        to {
+          box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+        }
+      }
+
+      .text-outline {
+        position: absolute;
+        bottom: 20px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+        font-size: 3rem; /* Adjust font size as needed */
+        text-align: center;
+        font-family: DmSans-Heading;
+        color: #c29e7c; /* Set text color to transparent */
+        -webkit-background-clip: text; /* For Safari */
+        background-clip: text; /* For other browsers */
+        background-image: linear-gradient(white, white); /* White gradient */
+        text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+          1px 1px 0 #ffffff; /* White outline effect */
+      }
+
+      @media (max-width: 1024px) {
+        .image-text {
+          font-size: 1.8rem;
+        }
+
+        .highlight {
+          font-size: 1rem;
+          padding: 0.3rem 0.6rem;
+        }
+
+        .hotspot-content {
+          width: 60%;
+          padding: 1rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .image-text {
+          font-size: 1.5rem;
+        }
+
+        .highlight {
+          font-size: 0.9rem;
+          padding: 0.2rem 0.5rem;
+        }
+
+        .hotspot-content {
+          width: 80%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .image-text {
+          font-size: 1.2rem;
+        }
+
+        .highlight {
+          font-size: 0.8rem;
+          padding: 0.1rem 0.4rem;
+        }
+
+        .hotspot-content {
+          width: 90%;
+        }
+      }
+
+      /* Adjust Label Positions Responsively */
+      @media (max-width: 768px) {
+        #b1 {
+          left: 65%;
+          top: 20%;
+        }
+
+        #b2 {
+          left: 18%;
+          top: 35%;
+        }
+
+        #b4 {
+          top: 55%;
+        }
+
+        #b3 {
+          top: 35%;
+          left: 60%;
+        }
+
+        #b4 {
+          left: 20%;
+        }
+
+        #b5 {
+          top: 75%;
+          left: 40%;
+        }
+      }
+    </style>
+    <style>
+      .selectable-item {
+        cursor: pointer;
+        padding: 10px;
+        border: 2px solid transparent;
+        transition: border-color 0.3s;
+      }
+
+      input:checked + .selectable-item {
+        border-color: #c29e7c;
+      }
+
+      .form-section {
+        margin-bottom: 30px;
+      }
+
+      .d-flex {
+        justify-content: center;
+      }
+
+      .project-card {
+        max-width: 355px;
+        overflow: hidden;
+      }
+
+      .img-container {
+        width: 100%;
+        height: 418px;
+        overflow: hidden;
+        border-radius: 8px; /* Optional rounded corners */
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .project-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .img-container:hover .project-img {
+        transform: scale(1.1); /* Zoom-in effect */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border position-relative text-primary"
+        style="width: 6rem; height: 6rem"
+        role="status"
+      ></div>
+      <img
+        class="position-absolute top-50 start-50 translate-middle"
+        src="./img/logo.png"
+        height="50px"
+        width="50px"
+        alt="Icon"
+      />
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav
+    class="navbar navbar-expand-lg bg-light navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn"
+    data-wow-delay="0.1s"
+  >
+    <a href="./index.html" class="navbar-brand ms-4 ms-lg-0">
+      <h1 class="text-primary m-0" style="font-size: 20px">
+        <img
+          class="me-3"
+          src="./img/new_logo-removebg-preview.png"
+          alt="Icon"
+          height="40px"
+          width="150px"
+        />
+      </h1>
+    </a>
+    <button
+      type="button"
+      class="navbar-toggler me-4"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0" style="font-size: 12px">
+        <a href="./index.html" class="nav-item nav-link ">Home</a>
+        <a href="./kitchens.html" class="nav-item nav-link">Kitchen</a>
+        <a href="./closets.html" class="nav-item nav-link">Closets</a>
+        <a href="./tvWall.html" class="nav-item nav-link">TV Wall</a>
+        <a href="./kidsRoom.html" class="nav-item nav-link">Kids Room</a>
+        <a href="./vanities.html" class="nav-item nav-link active">Vanities</a>
+        <a href="./furniture.html" class="nav-item nav-link"
+          >Other Furnitures</a
+        >
+        <a href="./service.html" class="nav-item nav-link">Other Services</a>
+        <a href="./project.html" class="nav-item nav-link">Portfolio</a>
+        <a href="./about.html" class="nav-item nav-link">About</a>
+       
+        <a href="./contact.html" class="nav-item nav-link">Contact</a>
+      </div>
+
+      <button
+      type="button"
+      class="btn btn-primary"
+      onclick="copyToClipboard('+0569937768')"
+      data-toggle="tooltip" data-placement="top" title="Click To Copy !"
+    >
+      +0569937768
+    </button>
+    </div>
+  </nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div
+      class="container-fluid page-header py-5 mb-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <h1 class="display-1 text-white animated slideInDown">Vanities</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb text-uppercase mb-0">
+            <li class="breadcrumb-item">
+              <a class="text-white" href="./index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item text-primary active" aria-current="page">
+              Vanities
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Project Start -->
+    <div class="container-xxl project py-5">
+      <div class="container mb-5">
+        <div class="col-lg-12">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h1 class="mb-3">
+                30 Years Of Experience In Architecture Industry
+              </h1>
+              <p class="mb-4">
+                Inspired by the Nordic style, Scandinavian Vanities embrace
+                warmth, simplicity, and functionality. Expect light color
+                palettes, natural materials like wood, and plenty of open
+                spaces. With an emphasis on coziness and minimalism, these
+                vanities are designed to bring in natural light and create a
+                welcoming, airy feel.
+              </p>
+              <button type="button" class="btn btn-primary">Contact Us</button>
+            </div>
+            <div class="col-md-6" style="min-height: 350px; position: relative">
+              <div class="position-relative h-100">
+                <img
+                  class="position-absolute img-fluid w-100 h-100"
+                  src="./img/vanity1.webp"
+                  style="object-fit: cover"
+                  alt=""
+                />
+                <h2 class="text-outline">VANITY</h2>
+                <!-- Text overlay -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- facts -->
+      <div class="container pt-5">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="fact-item text-center bg-light h-100 p-5 pt-0">
+              <div class="fact-icon">
+                <img src="./img/icons/icon-2.png" alt="Icon"  style="filter: invert(85%) sepia(10%) saturate(0%) brightness(120%) contrast(100%);"/>
+              </div>
+              <h3 class="mb-3">Exceptional Designs</h3>
+              <p class="mb-0">
+                Innovation, craftsmanship, and attention to detail define our
+                bespoke designs.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="fact-item text-center bg-light h-100 p-5 pt-0">
+              <div class="fact-icon">
+                <img src="./img/icons/icon-3.png" alt="Icon"  style="filter: invert(85%) sepia(10%) saturate(0%) brightness(120%) contrast(100%);"/>
+              </div>
+              <h3 class="mb-3">Customer Delight</h3>
+              <p class="mb-0">
+                Dedicated to ensuring your happiness and satisfaction every step
+                of the way.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="fact-item text-center bg-light h-100 p-5 pt-0">
+              <div class="fact-icon">
+                <img src="./img/icons/icon-4.png" alt="Icon"  style="filter: invert(85%) sepia(10%) saturate(0%) brightness(120%) contrast(100%);"/>
+              </div>
+              <h3 class="mb-3">Professional Team</h3>
+              <p class="mb-0">
+                Our talented blend of interior designers, architects, and
+                engineers crafts exceptional designs tailored to your vision.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Start -->
+      <div
+        class="container-fluid p-0 pb-5 wow fadeIn d-flex"
+        data-wow-delay="0.1s"
+      >
+        <div class="col-md-4 p-3">
+          <h4 class="section-title">Our Projects</h4>
+          <h3 class="display-5 mb-4">Explore our vanity designs</h3>
+          <p class="mb-4">
+            Our contemporary vanity designs are all about sleek lines, modern
+            aesthetics, and high functionality. With a focus on minimal clutter
+            and cutting-edge appliances, these vanities incorporate clean
+            surfaces, bold accents, and innovative storage solutions.
+          </p>
+          <button type="button" class="btn btn-primary">Contact Us</button>
+        </div>
+        <div class="owl-carousel kitchen-carousel position-relative col-md-8">
+          <div
+            class="owl-carousel-item position-relative px-2"
+            data-dot="<img src='img/carousel-1.jpg'>"
+          >
+            <img
+              class="img-fluid"
+              src="./img/vanity-14.jpg"
+              alt=""
+              style="height: 400px"
+            />
+          </div>
+          <div
+            class="owl-carousel-item position-relative px-2"
+            data-dot="<img src='img/carousel-2.jpg'>"
+          >
+            <img
+              class="img-fluid"
+              src="./img/vanity-13.jpg"
+              alt=""
+              style="height: 400px"
+            />
+          </div>
+          <div
+            class="owl-carousel-item position-relative px-2"
+            data-dot="<img src='img/carousel-3.jpg'>"
+          >
+            <img
+              class="img-fluid"
+              src="./img/vanity-12.jpg"
+              alt=""
+              style="height: 400px"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Carousel End -->
+
+      <!-- Carousel Start -->
+      <div
+        class="container-fluid p-0 pb-5 wow fadeIn d-flex"
+        data-wow-delay="0.1s"
+      >
+        <div>
+          <div class="d-flex">
+            <div class="p-3">
+              <img
+                class="img-fluid"
+                src="./img/vanity-11.jpg"
+                alt=""
+                style="height: 200px"
+              />
+            </div>
+            <div class="p-3">
+              <img
+                class="img-fluid"
+                src="./img/vanity-10.jpg"
+                alt=""
+                style="height: 200px"
+              />
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="p-3">
+              <img
+                class="img-fluid"
+                src="./img/vanity-15.jpg"
+                alt=""
+                style="height: 200px"
+              />
+            </div>
+            <div class="p-3">
+              <img
+                class="img-fluid"
+                src="./img/vanity1.webp"
+                alt=""
+                style="height: 200px"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 p-3">
+          <h6 class="section-title">Our Projects</h6>
+          <h4 class="display-5 mb-4">Explore our vanity designs</h4>
+          <p class="mb-4">
+            Our contemporary vanity designs are all about sleek lines, modern
+            aesthetics, and high functionality.
+          </p>
+          <p><span class="fas fa-check">Corner cabinet fitting</span></p>
+          <p><span class="fas fa-check">Corner cabinet fitting</span></p>
+          <p><span class="fas fa-check">Corner cabinet fitting</span></p>
+          <p><span class="fas fa-check">Corner cabinet fitting</span></p>
+          <p><span class="fas fa-check">Corner cabinet fitting</span></p>
+          <button type="button" class="btn btn-primary">Contact Us</button>
+        </div>
+      </div>
+      <!-- Carousel End -->
+    </div>
+    <!-- Project End -->
+
+    <div class="container-fluid">
+      <div
+        id="hotspots-container"
+        class="hidden w-90 mw-1200 mx-auto rounded shadow text-center"
+        style="
+          background: url(./img/vanity-13.jpg) center / cover no-repeat;
+          display: none;
+          max-height: 0;
+          overflow: hidden;
+          mso-hide: all;
+        "
+      >
+        <div
+          style="padding-bottom: 66.66%; position: relative"
+          class="text-center"
+        >
+          <!-- Text on Top Center -->
+          <div class="image-text">5 ELEMENTS OF A GREAT VANITY</div>
+          <!-- Hotspot Labels -->
+          <label for="hotspots1" id="b1" class="highlight absolute py-1 px-4"
+            >Facades</label
+          >
+          <label for="hotspots2" id="b2" class="highlight absolute py-1 px-4"
+            >Worktop</label
+          >
+          <label for="hotspots3" id="b3" class="highlight absolute py-1 px-4"
+            >Excellence in Workmanship</label
+          >
+
+          <label for="hotspots4" id="b4" class="highlight absolute py-1 px-4"
+            >Excellence in Workmanship</label
+          >
+
+          <label for="hotspots5" id="b5" class="highlight absolute py-1 px-4"
+            >Excellence in Workmanship</label
+          >
+
+          <!-- Content for Each Hotspot -->
+          <div id="content1" class="hotspot-content bg-white rounded shadow">
+            <p class="m-2 text-s leading-relaxed">
+              Found in Akaka Falls State Park, Akaka Falls is a magnificent
+              sight, cascading 135 metres from a cliff in lush, misty
+              rainforest. Twice the height of Niagara Falls, the free-falling
+              Akaka Falls have a strong flow year-round.
+            </p>
+          </div>
+
+          <div id="content2" class="hotspot-content bg-white rounded shadow">
+            <p class="m-2 text-s leading-relaxed">
+              With lava flows dating back some 250,000 years ago, Kilauea is the
+              youngest of the 5 active volcanoes in Hawaii – but it's also the
+              feistiest.
+            </p>
+          </div>
+
+          <div id="content3" class="hotspot-content bg-white rounded shadow">
+            <p class="m-2 text-s leading-relaxed">
+              Molokai island’s towering sea cliffs give it a dramatic landscape,
+              but there’s just as much beauty to behold in the depths of the sea
+              waters that surround it.
+            </p>
+          </div>
+
+          <div id="content4" class="hotspot-content bg-white rounded shadow">
+            <p class="m-2 text-s leading-relaxed">
+              Molokai island’s towering sea cliffs give it a dramatic landscape,
+              but there’s just as much beauty to behold in the depths of the sea
+              waters that surround it.
+            </p>
+          </div>
+
+          <div id="content5" class="hotspot-content bg-white rounded shadow">
+            <p class="m-2 text-s leading-relaxed">
+              Molokai island’s towering sea cliffs give it a dramatic landscape,
+              but there’s just as much beauty to behold in the depths of the sea
+              waters that surround it.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="fallback" class="text-center bold text-m"></div>
+    </div>
+
+ <!-- Quote -->
+ <div style="display: flex; flex-wrap: wrap; max-width: 1200px; width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+
+  <!-- Image Section -->
+  <div style="flex: 1; min-width: 300px; padding: 10px;">
+      <img src="./img/tvwall-12.jpg" alt="TV Wall Design" style="width: 100%; height: auto; object-fit: cover; border-radius: 8px;">
+  </div>
+
+  <!-- Form Section -->
+  <div style="flex: 1; padding: 40px; background-color: #f7f7f7; min-width: 300px; box-sizing: border-box;">
+      <h3 style="color: #c8c4c4; letter-spacing: 1px; font-size: 14px; font-weight: bold; margin-bottom: 10px;">ESTIMATE</h3>
+      <h1 style="font-size: 32px; color: #333; font-weight: bold; margin-bottom: 20px; line-height: 1.2;">I NEED A QUOTE FOR MY TV WALL 3D DESIGN</h1>
+      <p style="font-size: 16px; color: #555; line-height: 1.5; margin-bottom: 30px;">
+          If you already have your TV wall 3D design or found a picture of your dream TV wall furniture from the internet, attach the image here to get a quote for it.
+      </p>
+
+      <!-- Form Fields -->
+      <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+          <input type="text" placeholder="Name*" style="flex: 1; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; min-width: 200px;">
+          <input type="text" placeholder="Phone number*" style="flex: 1; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; min-width: 200px;">
+      </div>
+      <span style="font-size: 10px; color: #c8c4c4; display: block; margin-bottom: 15px;">MANDATORY FIELD</span>
+
+      <textarea placeholder="Message details" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; height: 80px; margin-bottom: 15px; resize: none;"></textarea>
+
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px;">
+          <input type="file" id="file-input" style="font-size: 14px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; flex: 1;">
+      </div>
+
+      <button style="width: 100%; padding: 12px; font-size: 16px; font-weight: bold; color: #fff; background-color: #b8ada7; border: none; border-radius: 4px; cursor: pointer;">
+          GET ESTIMATE
+      </button>
+  </div>
+
+</div>
+
+    
+    
+    <!-- social media-->
+    <div class="social-media-sticky">
+      <div class="d-flex justify-content-around social-media-icons">
+        <div class="icon-block">
+          <a
+            class="btn btn-square btn-outline-body"
+            href="https://wa.me/+971569937768?text=Hi"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="icon-block">
+          <a class="btn btn-square btn-outline-body" href="#">
+            <i class="fa fa-phone-alt"></i>
+          </a>
+        </div>
+        <div class="icon-block">
+          <a class="btn btn-square btn-outline-body" href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="icon-block">
+          <a class="btn btn-square btn-outline-body" href="#">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-body footer px-0 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-3">
+        <div class="row g-3">
+          <div class="d-flex justify-content-between copyright">
+            <div class="col-lg-3 col-md-6">
+              <h3 class="text-light mb-4">Services</h3>
+              <a class="btn btn-link" href="./kitchens.html">Kitchens</a>
+              <a class="btn btn-link" href="./closets.html">Closets</a>
+              <a class="btn btn-link" href="./entertainment.html"
+                >Entertainment
+              </a>
+              <a class="btn btn-link" href="./wallcladding.html"
+                >Wall Cladding</a
+              >
+              <a class="btn btn-link" href="./Maintenance.html">Maintenance</a>
+              <a class="btn btn-link" href="./InteriorDesign.html">Interior</a>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <h3 class="text-light mb-4">Quick Links</h3>
+              <a class="btn btn-link" href="./about.html">About Us</a>
+              <a class="btn btn-link" href="./contact.html">Contact </a>
+              <a class="btn btn-link" href="./service.html">Services</a>
+              <a class="btn btn-link" href="./contact.html">Support</a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-4" style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          ">
+              <a href="./index.html" class="ms-lg-0">
+                <img
+                  class="img-fluid"
+                  src="./img/fullLogo.png"
+                  alt="Icon" style="filter: invert(85%) sepia(10%) saturate(0%) brightness(120%) contrast(100%);"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-md-12 text-center">
+            <h3 class="text-light mb-2">Address</h3>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt text-primary me-3"></i>
+              Showroom 220, Al Asmawi Building, Umm Al Sheif,Sheikh Zayed Road,
+              Dubai
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt text-primary me-3"></i>+0569937768
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope text-primary me-3"></i
+              >marsinteriors@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a href="#">MARS INTERIORS</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              Designed By <a href="https://texpro.io">TexPro</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/wow/wow.min.js"></script>
+    <script src="./lib/easing/easing.min.js"></script>
+    <script src="./lib/waypoints/waypoints.min.js"></script>
+    <script src="./lib/counterup/counterup.min.js"></script>
+    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./lib/tempusdominus/js/moment.min.js"></script>
+    <script src="./lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="./lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="./js/main.js"></script>
+    <script src="./js/excel.js"></script>
+    <script src="./js/whatsapp.js"></script>
+
+    <!-- JavaScript -->
+    <script>
+      function sendWhatsAppMessage() {
+        // Get input values
+        const name = document.getElementById("userName").value;
+        const email = document.getElementById("userEmail").value;
+        const mobile = document.getElementById("userMobile").value;
+        const service = document.getElementById("userService").value;
+        const message = document.getElementById("userMessage").value;
+
+        // Construct WhatsApp message
+        const whatsappMessage = `Hi, I would like to book an appointment.
+    Name: ${name}
+    Email: ${email}
+    Mobile: ${mobile}
+    Service: ${service}
+    Message: ${message}`;
+
+        // Replace spaces with '+' and encode other special characters
+        const formattedMessage = whatsappMessage.replace(/\s+/g, "+");
+
+        // Create WhatsApp URL with the formatted message
+        const whatsappURL = `https://wa.me/+971569937768?text=${formattedMessage}`;
+
+        // Open WhatsApp with the message
+        window.open(whatsappURL, "_blank");
+      }
+    </script>
+
+    <script>
+      function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(
+          () => {
+            console.log("Phone Number Copied!");
+          },
+          (err) => {
+            console.error("Failed to copy: ", err);
+          }
+        );
+      }
+    </script>
+    <script>
+      const sections = document.querySelectorAll(".form-section");
+      let currentSectionIndex = 0;
+
+      const nextButton = document.getElementById("nextButton");
+      const prevButton = document.getElementById("prevButton");
+
+      // Function to show the current section based on index
+      function showSection(index) {
+        sections.forEach((section, i) => {
+          section.classList.toggle("d-none", i !== index);
+        });
+
+        // Update button states
+        prevButton.disabled = index === 0;
+        nextButton.textContent =
+          index === sections.length - 1 ? "Submit" : "Next";
+      }
+
+      // Next button event
+      nextButton.addEventListener("click", () => {
+        if (currentSectionIndex < sections.length - 1) {
+          currentSectionIndex++;
+          showSection(currentSectionIndex);
+        } else {
+          // Submit the form on the final step
+          alert("Form submitted!");
+        }
+      });
+
+      // Previous button event
+      prevButton.addEventListener("click", () => {
+        if (currentSectionIndex > 0) {
+          currentSectionIndex--;
+          showSection(currentSectionIndex);
+        }
+      });
+
+      // Initialize the first section
+      showSection(currentSectionIndex);
+    </script>
+     <script>
+      // JavaScript to update file name text on file selection
+      const fileInput = document.getElementById('file-input');
+      const fileNameDisplay = document.getElementById('file-name');
+
+      fileInput.addEventListener('change', function() {
+          fileNameDisplay.textContent = fileInput.files.length > 0 ? fileInput.files[0].name : "No file chosen";
+      });
+  </script>
+  </body>
+</html>

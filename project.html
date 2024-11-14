@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>MISTUDIU Kitchens & Closets</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="./img/icons/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"> -->
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="./lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="./lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="./lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
+      <img class="position-absolute top-50 start-50 translate-middle" src="./img/logo.png" height="50px" width="50px"  alt="Icon">
+  </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-3">
+                    <a class="text-body px-2" href="tel:+0123456789"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789</a>
+                    <a class="text-body px-2" href="mailto:info@example.com"><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</a>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-2">
+                    <a class="text-body px-2" href="">Terms</a>
+                    <a class="text-body px-2" href="">Privacy</a>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-light navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <a href="./index.html" class="navbar-brand ms-4 ms-lg-0">
+        <h1 class="text-primary m-0" style="font-size: 20px">
+          <img
+            class="me-3"
+            src="./img/new_logo-removebg-preview.png"
+            alt="Icon"
+            height="40px"
+            width="150px"
+          />
+        </h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0" style="font-size: 12px">
+          <a href="./index.html" class="nav-item nav-link ">Home</a>
+          <a href="./kitchens.html" class="nav-item nav-link">Kitchen</a>
+          <a href="./closets.html" class="nav-item nav-link">Closets</a>
+          <a href="./tvWall.html" class="nav-item nav-link">TV Wall</a>
+          <a href="./kidsRoom.html" class="nav-item nav-link">Kids Room</a>
+          <a href="./vanities.html" class="nav-item nav-link">Vanities</a>
+          <a href="./furniture.html" class="nav-item nav-link"
+            >Other Furnitures</a
+          >
+          <a href="./service.html" class="nav-item nav-link">Other Services</a>
+          <a href="./project.html" class="nav-item nav-link active">Portfolio</a>
+          <a href="./about.html" class="nav-item nav-link">About</a>
+         
+          <a href="./contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+
+        <button
+        type="button"
+        class="btn btn-primary"
+        onclick="copyToClipboard('+0569937768')"
+        data-toggle="tooltip" data-placement="top" title="Click To Copy !"
+      >
+        +0569937768
+      </button>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-1 text-white animated slideInDown">Portfolio</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Portfolio</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- intro  -->
+    <div class="container-xxl project py-5">
+      <div class="container">
+          <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+              <h4 class="section-title">Our Portfolio</h4>
+              <h2 class="mb-4">We offer more than simply high-quality services.</h2>
+              <p style="text-align: unset; line-height: 1.6; margin-bottom: 15px;">
+                Discover MISTUDIU Kitchens & Closets, where bespoke furniture transforms your home into a masterpiece.
+              </p>
+              <p style="text-align: unset; line-height: 2; margin-bottom: 15px;">
+                Our skilled artisans and designers specialize in crafting kitchens, wardrobes, and custom cabinetry that mirror your personal taste while meeting every practical need. From innovative layouts to the finest materials, MISTUDIU redefines luxury with every creation, bringing artistry and precision to every corner of your home.
+              </p>
+              <p style="text-align: unset; line-height: 1.6; margin-bottom: 20px;">
+                With a seamless fusion of elegance and functionality, we create spaces that are as inspiring as they are timeless, setting a new standard in home interiors.
+              </p>
+              <button type="button" class="btn btn-primary" onclick="copyToClipboard('+0569937768')" data-toggle="tooltip" data-placement="center" title="Click To Copy!">
+                  Contact Us
+              </button>
+          </div>
+      </div>
+  </div>
+  
+    <!-- intro -->
+    
+        
+
+<!-- projects -->
+<div style="margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;">
+  <!-- Main Container -->
+  <div style="max-width: 1300px; margin: 0 auto; padding: 20px; background-color: #f9f9f9;">
+
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+
+          <!-- dubai Section  -->
+          <div style="flex: 1 1 45%; text-align: center; max-width: 100%; box-sizing: border-box;">
+              <h2 style="font-size: 18px; color: black; text-transform: uppercase; margin-bottom: 10px;">
+                  Dubai Hills Estate, Private Town House, Dubai
+              </h2>
+              <div style="position: relative; display: inline-block;  max-width: 100%; width: 100%;">
+                  <span onclick="prevImage('dubai')" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10094;</span>
+                  <img id="dubai-main" src="./img/Dubai Hills/IMG-20241109-WA0002.jpg" alt="dubai" style="width: 100%; max-height: 415px; border-radius: 8px; cursor: pointer;" onclick="showLargePreview('dubai')">
+                  <span onclick="nextImage('dubai')" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10095;</span>
+              </div>
+              <div style="display: flex; justify-content: center; gap: 5px; margin-top: 10px; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap;">
+                
+                  <!-- dubai Thumbnails -->
+                  <img src="./img/Dubai Hills/IMG-20241109-WA0002.jpg" alt="dubai 1" onclick="changeImage('dubai', 0)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Dubai Hills/IMG-20241109-WA0003.jpg" alt="dubai 2" onclick="changeImage('dubai', 1)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Dubai Hills/IMG-20241109-WA0018.jpg" alt="dubai 3" onclick="changeImage('dubai', 2)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Dubai Hills/IMG-20241109-WA0005.jpg" alt="dubai 4" onclick="changeImage('dubai', 3)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Dubai Hills/IMG-20241109-WA0006.jpg" alt="dubai 5" onclick="changeImage('dubai', 4)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Dubai Hills/IMG-20241109-WA0022.jpg" alt="dubai 6" onclick="changeImage('dubai', 5)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Dubai Hills/IMG-20241109-WA0008.jpg" alt="dubai 7" onclick="changeImage('dubai', 6)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Dubai Hills/IMG-20241109-WA0009.jpg" alt="dubai 8" onclick="changeImage('dubai', 7)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Dubai Hills/IMG-20241109-WA0028.jpg" alt="dubai 9" onclick="changeImage('dubai', 8)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Dubai Hills/IMG-20241109-WA0033.jpg" alt="dubai 10" onclick="changeImage('dubai', 9)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              </div>
+          </div>
+        <!-- Large Preview Modal -->
+<div id="largePreview" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); align-items: center; justify-content: center; z-index: 1000;">
+  <!-- Close Button -->
+  <span onclick="closeLargePreview()" style="position: absolute; top: 20px; right: 20px; font-size: 30px; color: white; cursor: pointer;">&times;</span>
+  
+  <!-- Carousel Buttons for Large Preview -->
+  <span onclick="carouselPrev()" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10094;</span>
+  <img id="previewImage" src="" onclick="closeLargePreview()" style="max-width: 90%; max-height: 90%; border-radius: 8px; cursor: pointer;">
+  <span onclick="carouselNext()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10095;</span>
+</div>
+
+
+
+
+          <!-- sundials Section  -->
+          <div style="flex: 1 1 45%; text-align: center; max-width: 100%; box-sizing: border-box;">
+              <h2 style="font-size: 18px; color: black; text-transform: uppercase; margin-bottom: 10px;">
+                  The Sundials, Jumeirah Golf Estate, Private Villa, Dubai
+              </h2>
+              <div style="position: relative; display: inline-block; max-width: 100%; width: 100%;">
+                  <span onclick="prevImage('sundials')" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10094;</span>
+                  <img id="sundials-main" src="./img/The Sundials/IMG-20241109-WA0134.jpg" alt="Dining Room" style="width: 100%; max-height: 415px; border-radius: 8px; cursor: pointer;" onclick="showLargePreview('sundials')">
+                  <span onclick="nextImage('sundials')" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10095;</span>
+              </div>
+              <div style="display: flex; justify-content: center; gap: 5px; margin-top: 10px; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap;">
+                
+                  <!-- sundials Room Thumbnails -->
+                  <img src="./img/The Sundials/IMG-20241109-WA0134.jpg" alt="sundials Room 1" onclick="changeImage('sundials', 0)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/The Sundials/IMG-20241109-WA0135.jpg" alt="sundials Room 2" onclick="changeImage('sundials', 1)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/The Sundials/IMG-20241109-WA0136.jpg" alt="sundials Room 3" onclick="changeImage('sundials', 2)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/The Sundials/IMG-20241109-WA0137.jpg" alt="sundials Room 4" onclick="changeImage('sundials', 3)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/The Sundials/IMG-20241109-WA0138.jpg" alt="sundials Room 5" onclick="changeImage('sundials', 4)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/The Sundials/IMG-20241109-WA0139.jpg" alt="sundials Room 6" onclick="changeImage('sundials', 5)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/The Sundials/IMG-20241109-WA0140.jpg" alt="sundials Room 7" onclick="changeImage('sundials', 6)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/The Sundials/IMG-20241109-WA0141.jpg" alt="sundials Room 8" onclick="changeImage('sundials', 7)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/The Sundials/IMG-20241109-WA0142.jpg" alt="sundials Room 9" onclick="changeImage('sundials', 8)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/The Sundials/IMG-20241109-WA0143.jpg" alt="sundials Room 10" onclick="changeImage('sundials', 9)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+
+              </div>
+          </div>
+            <!-- Large Preview Modal -->
+<div id="largePreview" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); align-items: center; justify-content: center; z-index: 1000;">
+  <!-- Close Button -->
+  <span onclick="closeLargePreview()" style="position: absolute; top: 20px; right: 20px; font-size: 30px; color: white; cursor: pointer;">&times;</span>
+  
+  <!-- Carousel Buttons for Large Preview -->
+  <span onclick="carouselPrev()" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10094;</span>
+  <img id="previewImage" src="" onclick="closeLargePreview()" style="max-width: 90%; max-height: 90%; border-radius: 8px; cursor: pointer;">
+  <span onclick="carouselNext()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10095;</span>
+</div>
+      </div>
+
+
+      <!-- Line between images -->
+      <hr style="width: 100%; border: none; border-top: 1px solid #cccccc05; margin: 20px 0;">
+      <!-- Line between images -->
+
+
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+
+        <!-- Madina Section -->
+        <div style="flex: 1 1 45%; text-align: center; max-width: 100%; box-sizing: border-box;">
+            <h2 style="font-size: 18px; color: black; text-transform: uppercase; margin-bottom: 10px;">
+              Madina Tower Apartment, Cluster O, JLT, Dubai
+            </h2>
+            <div style="position: relative; display: inline-block; max-width: 100%; width: 100%;">
+                <span onclick="prevImage('madina')" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10094;</span>
+                <img id="madina-main" src="./img/Madina Tower/IMG-20241109-WA0043.jpg" alt="madina" style="width: 100%; max-height: 415px; border-radius: 8px; cursor: pointer;" onclick="showLargePreview('madina')">
+                <span onclick="nextImage('madina')" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10095;</span>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 5px; margin-top: 10px; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap;">
+              
+                <!-- madina Thumbnails -->
+                <img src="./img/Madina Tower/IMG-20241109-WA0043.jpg" alt="madina 1" onclick="changeImage('madina', 0)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                <img src="./img/Madina Tower/IMG-20241109-WA0046.jpg" alt="madina 4" onclick="changeImage('madina', 3)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                <img src="./img/Madina Tower/IMG-20241109-WA0047.jpg" alt="madina 5" onclick="changeImage('madina', 4)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                <img src="./img/Madina Tower/IMG-20241109-WA0048.jpg" alt="madina 6" onclick="changeImage('madina', 5)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                <img src="./img/Madina Tower/IMG-20241109-WA0049.jpg" alt="madina 7" onclick="changeImage('madina', 6)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                <img src="./img/Madina Tower/IMG-20241109-WA0050.jpg" alt="madina 8" onclick="changeImage('madina', 7)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                <img src="./img/Madina Tower/IMG-20241109-WA0051.jpg" alt="madina 9" onclick="changeImage('madina', 8)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                <img src="./img/Madina Tower/IMG-20241109-WA0052.jpg" alt="madina 10" onclick="changeImage('madina', 9)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+            </div>
+        </div>
+          <!-- Large Preview Modal -->
+<div id="largePreview" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); align-items: center; justify-content: center; z-index: 1000;">
+  <!-- Close Button -->
+  <span onclick="closeLargePreview()" style="position: absolute; top: 20px; right: 20px; font-size: 30px; color: white; cursor: pointer;">&times;</span>
+  
+  <!-- Carousel Buttons for Large Preview -->
+  <span onclick="carouselPrev()" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10094;</span>
+  <img id="previewImage" src="" onclick="closeLargePreview()" style="max-width: 90%; max-height: 90%; border-radius: 8px; cursor: pointer;">
+  <span onclick="carouselNext()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10095;</span>
+</div>
+
+        <!-- golf Section  -->
+        <div style="flex: 1 1 45%; text-align: center; max-width: 100%; box-sizing: border-box;">
+            <h2 style="font-size: 18px; color: black; text-transform: uppercase; margin-bottom: 10px;">
+              Golf Towers Apartment, The Greens, Dubai
+            </h2>
+            <div style="position: relative; display: inline-block; max-width: 100%; width: 100%;">
+                <span onclick="prevImage('golf')" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10094;</span>
+                <img id="golf-main" src="./img/Golf Towers/IMG-20241109-WA0037.jpg" alt="golf" style="width: 100%; max-height: 415px; border-radius: 8px; cursor: pointer;" onclick="showLargePreview('golf')">
+                <span onclick="nextImage('golf')" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10095;</span>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 5px; margin-top: 10px; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap;">
+              
+                <!-- golf Room Thumbnails -->
+                <img src="./img/Golf Towers/IMG-20241109-WA0037.jpg" alt="golf Room 1" onclick="changeImage('golf', 0)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                <img src="./img/Golf Towers/IMG-20241109-WA0038.jpg" alt="golf Room 2" onclick="changeImage('golf', 1)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                <img src="./img/Golf Towers/IMG-20241109-WA0039.jpg" alt="golf Room 3" onclick="changeImage('golf', 2)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                <img src="./img/Golf Towers/IMG-20241109-WA0040.jpg" alt="golf Room 4" onclick="changeImage('golf', 3)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                <img src="./img/Golf Towers/IMG-20241109-WA0041.jpg" alt="golf Room 5" onclick="changeImage('golf', 4)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                <img src="./img/Golf Towers/IMG-20241109-WA0042.jpg" alt="golf Room 6" onclick="changeImage('golf', 5)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                </div>
+        </div>
+          <!-- Large Preview Modal -->
+<div id="largePreview" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); align-items: center; justify-content: center; z-index: 1000;">
+  <!-- Close Button -->
+  <span onclick="closeLargePreview()" style="position: absolute; top: 20px; right: 20px; font-size: 30px; color: white; cursor: pointer;">&times;</span>
+  
+  <!-- Carousel Buttons for Large Preview -->
+  <span onclick="carouselPrev()" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10094;</span>
+  <img id="previewImage" src="" onclick="closeLargePreview()" style="max-width: 90%; max-height: 90%; border-radius: 8px; cursor: pointer;">
+  <span onclick="carouselNext()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10095;</span>
+</div>
+    </div>
+
+
+<!-- Line between images -->
+    <hr style="width: 100%; border: none; border-top: 1px solid #cccccc05; margin: 20px 0;">
+    <!-- Line between images -->
+
+
+
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+
+      <!-- Indigo Section -->
+      <div style="flex: 1 1 45%; text-align: center; max-width: 100%; box-sizing: border-box;">
+          <h2 style="font-size: 18px; color: black; text-transform: uppercase; margin-bottom: 10px;">
+            Indigo Tower Apartment, Cluster D, JLT, Dubai
+          </h2>
+          <div style="position: relative; display: inline-block; max-width: 100%; width: 100%;">
+              <span onclick="prevImage('indigo')" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10094;</span>
+              <img id="indigo-main" src="./img/Indigo Tower/IMG-20241109-WA0054.jpg" alt="indigo" style="width: 100%; max-height: 415px; border-radius: 8px; cursor: pointer;" onclick="showLargePreview('indigo')">
+              <span onclick="nextImage('indigo')" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10095;</span>
+          </div>
+          <div style="display: flex; justify-content: center; gap: 5px; margin-top: 10px; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap;">
+            
+              <!-- Indigo Thumbnails -->
+              <img src="./img/Indigo Tower/IMG-20241109-WA0054.jpg" alt="indigo 1" onclick="changeImage('indigo', 0)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Indigo Tower/IMG-20241109-WA0056.jpg" alt="indigo 3" onclick="changeImage('indigo', 2)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Indigo Tower/IMG-20241109-WA0057.jpg" alt="indigo 4" onclick="changeImage('indigo', 3)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Indigo Tower/IMG-20241109-WA0058.jpg" alt="indigo 5" onclick="changeImage('indigo', 4)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Indigo Tower/IMG-20241109-WA0059.jpg" alt="indigo 6" onclick="changeImage('indigo', 5)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Indigo Tower/IMG-20241109-WA0060.jpg" alt="indigo 7" onclick="changeImage('indigo', 6)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Indigo Tower/IMG-20241109-WA0061.jpg" alt="indigo 8" onclick="changeImage('indigo', 7)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+          </div>
+      </div>
+        <!-- Large Preview Modal -->
+<div id="largePreview" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); align-items: center; justify-content: center; z-index: 1000;">
+  <!-- Close Button -->
+  <span onclick="closeLargePreview()" style="position: absolute; top: 20px; right: 20px; font-size: 30px; color: white; cursor: pointer;">&times;</span>
+  
+  <!-- Carousel Buttons for Large Preview -->
+  <span onclick="carouselPrev()" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10094;</span>
+  <img id="previewImage" src="" onclick="closeLargePreview()" style="max-width: 90%; max-height: 90%; border-radius: 8px; cursor: pointer;">
+  <span onclick="carouselNext()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10095;</span>
+</div>
+
+      <!-- Flame Section  -->
+      <div style="flex: 1 1 45%; text-align: center; max-width: 100%; box-sizing: border-box;">
+          <h2 style="font-size: 18px; color: black; text-transform: uppercase; margin-bottom: 10px;">
+            Flame Tree Ridge, Private Villa, Jumeirah Golf Estates, Dubai
+          </h2>
+          <div style="position: relative; display: inline-block; max-width: 100%; width: 100%;">
+              <span onclick="prevImage('flame')" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10094;</span>
+              <img id="flame-main" src="./img/Flame Tree/IMG-20241109-WA0064.jpg" alt="flame" style="width: 100%; max-height: 415px; border-radius: 8px; cursor: pointer;" onclick="showLargePreview('flame')">
+              <span onclick="nextImage('flame')" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10095;</span>
+          </div>
+          <div style="display: flex; justify-content: center; gap: 5px; margin-top: 10px; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap;">
+            
+              <!-- Flame Room Thumbnails -->
+              <img src="./img/Flame Tree/IMG-20241109-WA0064.jpg" alt="flame Room 1" onclick="changeImage('flame', 0)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Flame Tree/IMG-20241109-WA0065.jpg" alt="flame Room 2" onclick="changeImage('flame', 1)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Flame Tree/IMG-20241109-WA0066.jpg" alt="flame Room 3" onclick="changeImage('flame', 2)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Flame Tree/IMG-20241109-WA0067.jpg" alt="flame Room 4" onclick="changeImage('flame', 3)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Flame Tree/IMG-20241109-WA0068.jpg" alt="flame Room 5" onclick="changeImage('flame', 4)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Flame Tree/IMG-20241109-WA0069.jpg" alt="flame Room 6" onclick="changeImage('flame', 5)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Flame Tree/IMG-20241109-WA0070.jpg" alt="flame Room 7" onclick="changeImage('flame', 6)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Flame Tree/IMG-20241109-WA0071.jpg" alt="flame Room 8" onclick="changeImage('flame', 7)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Flame Tree/IMG-20241109-WA0072.jpg" alt="flame Room 9" onclick="changeImage('flame', 8)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              <img src="./img/Flame Tree/IMG-20241109-WA0073.jpg" alt="flame Room 10" onclick="changeImage('flame', 9)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+            </div>
+              </div>
+                <!-- Large Preview Modal -->
+<div id="largePreview" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); align-items: center; justify-content: center; z-index: 1000;">
+  <!-- Close Button -->
+  <span onclick="closeLargePreview()" style="position: absolute; top: 20px; right: 20px; font-size: 30px; color: white; cursor: pointer;">&times;</span>
+  
+  <!-- Carousel Buttons for Large Preview -->
+  <span onclick="carouselPrev()" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10094;</span>
+  <img id="previewImage" src="" onclick="closeLargePreview()" style="max-width: 90%; max-height: 90%; border-radius: 8px; cursor: pointer;">
+  <span onclick="carouselNext()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10095;</span>
+</div>
+            </div>
+           
+           
+    
+            <!-- Line between images -->
+            <hr style="width: 100%; border: none; border-top: 1px solid #cccccc05; margin: 20px 0;">
+            <!-- Line between images -->
+            
+
+
+<!-- Jumeirah section -->
+            <div style="flex: 1 1 45%; text-align: center;  max-width: 100%; box-sizing: border-box;">
+              <h2 style="font-size: 18px; color: black; text-transform: uppercase; margin-bottom: 10px;">
+                Jumeirah Parks Private Villa, Dubai
+              </h2>
+              <div style="position: relative; display: inline-block; max-width: 100%; width: 100%;">
+                  <span onclick="prevImage('jumeirah')" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10094;</span>
+                  <img id="jumeirah-main" src="./img/Jumeirah Parks/IMG-20241109-WA0077.jpg" alt="jumeirah" style="width: 100%; max-height: 500px; border-radius: 8px; cursor: pointer;" onclick="showLargePreview('jumeirah')">
+                  <span onclick="nextImage('jumeirah')" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; color: rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1;">&#10095;</span>
+              </div>
+              <div style="display: flex; justify-content: center; gap: 5px; margin-top: 10px; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap;">
+                  <!-- Jumeirah Thumbnails -->
+                  <img src="./img/Jumeirah Parks/IMG-20241109-WA0077.jpg" alt="jumeirah 1" onclick="changeImage('jumeirah', 0)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Jumeirah Parks/IMG-20241109-WA0078.jpg" alt="jumeirah 2" onclick="changeImage('jumeirah', 1)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Jumeirah Parks/IMG-20241109-WA0079.jpg" alt="jumeirah 3" onclick="changeImage('jumeirah', 2)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Jumeirah Parks/IMG-20241109-WA0080.jpg" alt="jumeirah 4" onclick="changeImage('jumeirah', 3)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Jumeirah Parks/IMG-20241109-WA0081.jpg" alt="jumeirah 5" onclick="changeImage('jumeirah', 4)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Jumeirah Parks/IMG-20241109-WA0082.jpg" alt="jumeirah 6" onclick="changeImage('jumeirah', 5)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Jumeirah Parks/IMG-20241109-WA0083.jpg" alt="jumeirah 7" onclick="changeImage('jumeirah', 6)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Jumeirah Parks/IMG-20241109-WA0084.jpg" alt="jumeirah 8" onclick="changeImage('jumeirah', 7)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Jumeirah Parks/IMG-20241109-WA0085.jpg" alt="jumeirah 8" onclick="changeImage('jumeirah', 7)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+                  <img src="./img/Jumeirah Parks/IMG-20241109-WA0086.jpg" alt="jumeirah 8" onclick="changeImage('jumeirah', 7)" style="height: 50px; width: 50px; cursor: pointer; border-radius: 4px; object-fit: cover;">
+              </div>
+  </div>
+    <!-- Large Preview Modal -->
+<div id="largePreview" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); align-items: center; justify-content: center; z-index: 1000;">
+  <!-- Close Button -->
+  <span onclick="closeLargePreview()" style="position: absolute; top: 20px; right: 20px; font-size: 30px; color: white; cursor: pointer;">&times;</span>
+  
+  <!-- Carousel Buttons for Large Preview -->
+  <span onclick="carouselPrev()" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10094;</span>
+  <img id="previewImage" src="" onclick="closeLargePreview()" style="max-width: 90%; max-height: 90%; border-radius: 8px; cursor: pointer;">
+  <span onclick="carouselNext()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer;">&#10095;</span>
+</div>
+</div>
+
+
+
+<!-- social media -->
+<div class="social-media-sticky">
+  <div class="d-flex justify-content-around social-media-icons">
+    <div class="icon-block">
+      <a
+        class="btn btn-square btn-outline-body"
+        href="https://wa.me/+971569937768?text=Hi"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <div class="icon-block">
+      <a class="btn btn-square btn-outline-body" href="#">
+        <i class="fa fa-phone-alt"></i>
+      </a>
+    </div>
+    <div class="icon-block">
+      <a class="btn btn-square btn-outline-body" href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <div class="icon-block">
+      <a class="btn btn-square btn-outline-body" href="#">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer Start -->
+<div
+  class="container-fluid bg-dark text-body footer px-0 wow fadeIn"
+  data-wow-delay="0.1s"
+>
+  <div class="container py-3">
+    <div class="row g-3">
+      <div class="d-flex justify-content-between copyright">
+        <div class="col-lg-3 col-md-6">
+          <h3 class="text-light mb-4">Services</h3>
+          <a class="btn btn-link" href="./kitchens.html">Kitchens</a>
+          <a class="btn btn-link" href="./closets.html">Closets</a>
+          <a class="btn btn-link" href="./entertainment.html"
+            >Entertainment
+          </a>
+          <a class="btn btn-link" href="./wallcladding.html"
+            >Wall Cladding</a
+          >
+          <a class="btn btn-link" href="./Maintenance.html">Maintenance</a>
+          <a class="btn btn-link" href="./InteriorDesign.html">Interior</a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3 class="text-light mb-4">Quick Links</h3>
+          <a class="btn btn-link" href="./about.html">About Us</a>
+          <a class="btn btn-link" href="./contact.html">Contact </a>
+          <a class="btn btn-link" href="./service.html">Services</a>
+          <a class="btn btn-link" href="./contact.html">Support</a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-4" style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      ">
+          <a href="./index.html" class="ms-lg-0">
+            <img
+              class="img-fluid"
+              src="./img/fullLogo.png"
+              alt="Icon" style="filter: invert(85%) sepia(10%) saturate(0%) brightness(120%) contrast(100%);"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-12 col-md-12 text-center">
+        <h3 class="text-light mb-2">Address</h3>
+        <p class="mb-2">
+          <i class="fa fa-map-marker-alt text-primary me-3"></i>
+          Showroom 220, Al Asmawi Building, Umm Al Sheif,Sheikh Zayed Road,
+          Dubai
+        </p>
+        <p class="mb-2">
+          <i class="fa fa-phone-alt text-primary me-3"></i>+0569937768
+        </p>
+        <p class="mb-2">
+          <i class="fa fa-envelope text-primary me-3"></i
+          >marsinteriors@gmail.com
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <a href="#">MARS INTERIORS</a>, All Right Reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          Designed By <a href="https://texpro.io">TexPro</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+  ><i class="bi bi-arrow-up"></i
+></a>
+
+
+   
+
+
+    
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/wow/wow.min.js"></script>
+    <script src="./lib/easing/easing.min.js"></script>
+    <script src="./lib/waypoints/waypoints.min.js"></script>
+    <script src="./lib/counterup/counterup.min.js"></script>
+    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./lib/tempusdominus/js/moment.min.js"></script>
+    <script src="./lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="./lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="./js/main.js"></script>
+    <script src="./js/excel.js"></script>
+    <script src="./js/whatsapp.js"></script>
+
+<!-- JavaScript -->
+<script>
+  function sendWhatsAppMessage() {
+    // Get input values
+    const name = document.getElementById('userName').value;
+    const email = document.getElementById('userEmail').value;
+    const mobile = document.getElementById('userMobile').value;
+    const service = document.getElementById('userService').value;
+    const message = document.getElementById('userMessage').value;
+
+    // Construct WhatsApp message
+    const whatsappMessage = `Hi, I would like to book an appointment.
+    Name: ${name}
+    Email: ${email}
+    Mobile: ${mobile}
+    Service: ${service}
+    Message: ${message}`;
+
+    // Replace spaces with '+' and encode other special characters
+    const formattedMessage = whatsappMessage.replace(/\s+/g, '+');
+
+    // Create WhatsApp URL with the formatted message
+    const whatsappURL = `https://wa.me/+971569937768?text=${formattedMessage}`;
+
+    // Open WhatsApp with the message
+    window.open(whatsappURL, '_blank');
+  }
+</script>
+
+
+
+<script>
+const images = {
+  dubai: [
+        './img/Dubai Hills/IMG-20241109-WA0002.jpg',
+        './img/Dubai Hills/IMG-20241109-WA0003.jpg',
+        './img/Dubai Hills/IMG-20241109-WA0018.jpg',
+        './img/Dubai Hills/IMG-20241109-WA0005.jpg',
+        './img/Dubai Hills/IMG-20241109-WA0006.jpg',
+        './img/Dubai Hills/IMG-20241109-WA0022.jpg',
+        './img/Dubai Hills/IMG-20241109-WA0008.jpg',
+        './img/Dubai Hills/IMG-20241109-WA0009.jpg',
+        './img/Dubai Hills/IMG-20241109-WA0028.jpg',
+        './img/Dubai Hills/IMG-20241109-WA0033.jpg'
+    ],
+    sundials: [
+        './img/The Sundials/IMG-20241109-WA0134.jpg',
+        './img/The Sundials/IMG-20241109-WA0135.jpg',
+        './img/The Sundials/IMG-20241109-WA0136.jpg',
+        './img/The Sundials/IMG-20241109-WA0137.jpg',
+        './img/The Sundials/IMG-20241109-WA0138.jpg',
+        './img/The Sundials/IMG-20241109-WA0139.jpg',
+        './img/The Sundials/IMG-20241109-WA0140.jpg',
+        './img/The Sundials/IMG-20241109-WA0141.jpg',
+        './img/The Sundials/IMG-20241109-WA0142.jpg',
+        './img/The Sundials/IMG-20241109-WA0143.jpg'
+    ],
+    madina:[
+      './img/Madina Tower/IMG-20241109-WA0043.jpg',
+      './img/Madina Tower/IMG-20241109-WA0046.jpg',
+      './img/Madina Tower/IMG-20241109-WA0047.jpg',
+      './img/Madina Tower/IMG-20241109-WA0048.jpg',
+      './img/Madina Tower/IMG-20241109-WA0049.jpg',
+      './img/Madina Tower/IMG-20241109-WA0050.jpg',
+      './img/Madina Tower/IMG-20241109-WA0051.jpg',
+      './img/Madina Tower/IMG-20241109-WA0052.jpg',
+    ],
+    golf:[
+      './img/Golf Towers/IMG-20241109-WA0037.jpg',
+      './img/Golf Towers/IMG-20241109-WA0038.jpg',
+      './img/Golf Towers/IMG-20241109-WA0039.jpg',
+      './img/Golf Towers/IMG-20241109-WA0040.jpg',
+      './img/Golf Towers/IMG-20241109-WA0041.jpg',
+      './img/Golf Towers/IMG-20241109-WA0042.jpg',
+    ],
+    indigo:[
+      './img/Indigo Tower/IMG-20241109-WA0054.jpg',
+      './img/Indigo Tower/IMG-20241109-WA0056.jpg',
+      './img/Indigo Tower/IMG-20241109-WA0057.jpg',
+      './img/Indigo Tower/IMG-20241109-WA0058.jpg',
+      './img/Indigo Tower/IMG-20241109-WA0059.jpg',
+      './img/Indigo Tower/IMG-20241109-WA0060.jpg',
+      './img/Indigo Tower/IMG-20241109-WA0061.jpg',
+    ],
+    flame:[
+      './img/Flame Tree/IMG-20241109-WA0064.jpg',
+      './img/Flame Tree/IMG-20241109-WA0065.jpg',
+      './img/Flame Tree/IMG-20241109-WA0066.jpg',
+      './img/Flame Tree/IMG-20241109-WA0067.jpg',
+      './img/Flame Tree/IMG-20241109-WA0068.jpg',
+      './img/Flame Tree/IMG-20241109-WA0069.jpg',
+      './img/Flame Tree/IMG-20241109-WA0070.jpg',
+      './img/Flame Tree/IMG-20241109-WA0071.jpg',
+      './img/Flame Tree/IMG-20241109-WA0072.jpg',
+      './img/Flame Tree/IMG-20241109-WA0073.jpg',
+    ],
+    jumeirah:[
+      './img/Jumeirah Parks/IMG-20241109-WA0077.jpg',
+      './img/Jumeirah Parks/IMG-20241109-WA0078.jpg',
+      './img/Jumeirah Parks/IMG-20241109-WA0079.jpg',
+      './img/Jumeirah Parks/IMG-20241109-WA0080.jpg',
+      './img/Jumeirah Parks/IMG-20241109-WA0081.jpg',
+      './img/Jumeirah Parks/IMG-20241109-WA0082.jpg',
+      './img/Jumeirah Parks/IMG-20241109-WA0083.jpg',
+      './img/Jumeirah Parks/IMG-20241109-WA0084.jpg',
+      './img/Jumeirah Parks/IMG-20241109-WA0085.jpg',
+      './img/Jumeirah Parks/IMG-20241109-WA0086.jpg',
+    ]
+
+};
+
+
+// Track current image index for each section
+let currentIndex = { dubai: 0, sundials: 0 ,madina: 0, golf: 0, indigo: 0, flame: 0, jumeirah: 0};
+
+let currentSection = '';
+
+// Function to change image in main view
+function changeImage(section, index) {
+    document.getElementById(`${section}-main`).src = images[section][index];
+    currentIndex[section] = index;
+}
+
+// Function to show large preview with carousel buttons
+function showLargePreview(section) {
+    currentSection = section;
+    document.getElementById("previewImage").src = images[section][currentIndex[section]];
+    document.getElementById("largePreview").style.display = "flex";
+}
+
+// Function to close the large preview
+function closeLargePreview() {
+    document.getElementById("largePreview").style.display = "none";
+}
+
+// Function to go to the next image in the preview
+function carouselNext() {
+    currentIndex[currentSection] = (currentIndex[currentSection] + 1) % images[currentSection].length;
+    document.getElementById("previewImage").src = images[currentSection][currentIndex[currentSection]];
+}
+
+// Function to go to the previous image in the preview
+function carouselPrev() {
+    currentIndex[currentSection] = (currentIndex[currentSection] - 1 + images[currentSection].length) % images[currentSection].length;
+    document.getElementById("previewImage").src = images[currentSection][currentIndex[currentSection]];
+}
+
+// Next and previous for main view
+function nextImage(section) {
+    currentIndex[section] = (currentIndex[section] + 1) % images[section].length;
+    document.getElementById(`${section}-main`).src = images[section][currentIndex[section]];
+}
+
+function prevImage(section) {
+    currentIndex[section] = (currentIndex[section] - 1 + images[section].length) % images[section].length;
+    document.getElementById(`${section}-main`).src = images[section][currentIndex[section]];
+}
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+
+
