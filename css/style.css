@@ -108,7 +108,7 @@ h6,
 
 .btn-outline-body {
     color: var(--primary);
-    border-color: #777777;
+    border-color: #6C757D;
 }
 
 .btn-outline-body:hover {
@@ -343,7 +343,7 @@ h6,
 }
 
 .fact-item:hover .fact-icon {
-    background: var(--dark);
+    background: #31384A;
 }
 
 .fact-item .fact-icon i {
@@ -727,5 +727,6 @@ h6,
       height: 250px;
   }
 }
+
 
 

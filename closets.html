@@ -202,12 +202,12 @@
         font-size: 3rem; /* Adjust font size as needed */
         text-align: center;
         font-family: DmSans-Heading;
-        color: #c29e7c; /* Set text color to transparent */
         -webkit-background-clip: text; /* For Safari */
         background-clip: text; /* For other browsers */
-        background-image: linear-gradient(white, white); /* White gradient */
-        text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
-          1px 1px 0 #ffffff; /* White outline effect */
+        color: black;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
       }
 
       @media (max-width: 1024px) {
@@ -353,56 +353,58 @@
 
     <!-- Navbar Start -->
     <nav
-    class="navbar navbar-expand-lg bg-light navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn"
-    data-wow-delay="0.1s"
-  >
-    <a href="./index.html" class="navbar-brand ms-4 ms-lg-0">
-      <h1 class="text-primary m-0" style="font-size: 20px">
-        <img
-          class="me-3"
-          src="./img/new_logo-removebg-preview.png"
-          alt="Icon"
-          height="40px"
-          width="150px"
-        />
-      </h1>
-    </a>
-    <button
-      type="button"
-      class="navbar-toggler me-4"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarCollapse"
+      class="navbar navbar-expand-lg bg-light navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn"
+      data-wow-delay="0.1s"
     >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="navbar-nav ms-auto p-4 p-lg-0" style="font-size: 12px">
-        <a href="./index.html" class="nav-item nav-link ">Home</a>
-        <a href="./kitchens.html" class="nav-item nav-link">Kitchen</a>
-        <a href="./closets.html" class="nav-item nav-link active">Closets</a>
-        <a href="./tvWall.html" class="nav-item nav-link">TV Wall</a>
-        <a href="./kidsRoom.html" class="nav-item nav-link">Kids Room</a>
-        <a href="./vanities.html" class="nav-item nav-link">Vanities</a>
-        <a href="./furniture.html" class="nav-item nav-link"
-          >Other Furnitures</a
-        >
-        <a href="./service.html" class="nav-item nav-link">Other Services</a>
-        <a href="./project.html" class="nav-item nav-link">Portfolio</a>
-        <a href="./about.html" class="nav-item nav-link">About</a>
-       
-        <a href="./contact.html" class="nav-item nav-link">Contact</a>
-      </div>
-
+      <a href="./index.html" class="navbar-brand ms-4 ms-lg-0">
+        <h1 class="text-primary m-0" style="font-size: 20px">
+          <img
+            class="me-3"
+            src="./img/new_logo-removebg-preview.png"
+            alt="Icon"
+            height="40px"
+            width="150px"
+          />
+        </h1>
+      </a>
       <button
-      type="button"
-      class="btn btn-primary"
-      onclick="copyToClipboard('+0569937768')"
-      data-toggle="tooltip" data-placement="top" title="Click To Copy !"
-    >
-      +0569937768
-    </button>
-    </div>
-  </nav>
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0" style="font-size: 12px">
+          <a href="./index.html" class="nav-item nav-link">Home</a>
+          <a href="./kitchens.html" class="nav-item nav-link">Kitchen</a>
+          <a href="./closets.html" class="nav-item nav-link active">Closets</a>
+          <a href="./tvWall.html" class="nav-item nav-link">TV Wall</a>
+          <a href="./kidsRoom.html" class="nav-item nav-link">Kids Room</a>
+          <a href="./vanities.html" class="nav-item nav-link">Vanities</a>
+          <a href="./furniture.html" class="nav-item nav-link"
+            >Other Furnitures</a
+          >
+          <a href="./service.html" class="nav-item nav-link">Other Services</a>
+          <a href="./project.html" class="nav-item nav-link">Portfolio</a>
+          <a href="./about.html" class="nav-item nav-link">About</a>
+
+          <a href="./contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="copyToClipboard('+0569937768')"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="Click To Copy !"
+        >
+          +0569937768
+        </button>
+      </div>
+    </nav>
     <!-- Navbar End -->
     <!-- Page Header Start -->
     <div
@@ -455,6 +457,7 @@
                   alt=""
                 />
                 <h2 class="text-outline">CLOSET</h2>
+
                 <!-- Text overlay -->
               </div>
             </div>
@@ -468,7 +471,14 @@
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="fact-item text-center bg-light h-100 p-5 pt-0">
               <div class="fact-icon">
-                <img src="./img/icons/icon-2.png" alt="Icon"  style="filter: invert(85%) sepia(10%) saturate(0%) brightness(120%) contrast(100%);" />
+                <img
+                  src="./img/icons/icon-2.png"
+                  alt="Icon"
+                  style="
+                    filter: invert(85%) sepia(10%) saturate(0%) brightness(120%)
+                      contrast(100%);
+                  "
+                />
               </div>
               <h3 class="mb-3">Exceptional Designs</h3>
               <p class="mb-0">
@@ -480,7 +490,14 @@
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="fact-item text-center bg-light h-100 p-5 pt-0">
               <div class="fact-icon">
-                <img src="./img/icons/icon-3.png" alt="Icon"  style="filter: invert(85%) sepia(10%) saturate(0%) brightness(120%) contrast(100%);"/>
+                <img
+                  src="./img/icons/icon-3.png"
+                  alt="Icon"
+                  style="
+                    filter: invert(85%) sepia(10%) saturate(0%) brightness(120%)
+                      contrast(100%);
+                  "
+                />
               </div>
               <h3 class="mb-3">Customer Delight</h3>
               <p class="mb-0">
@@ -492,7 +509,14 @@
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="fact-item text-center bg-light h-100 p-5 pt-0">
               <div class="fact-icon">
-                <img src="./img/icons/icon-4.png" alt="Icon"  style="filter: invert(85%) sepia(10%) saturate(0%) brightness(120%) contrast(100%);"/>
+                <img
+                  src="./img/icons/icon-4.png"
+                  alt="Icon"
+                  style="
+                    filter: invert(85%) sepia(10%) saturate(0%) brightness(120%)
+                      contrast(100%);
+                  "
+                />
               </div>
               <h3 class="mb-3">Professional Team</h3>
               <p class="mb-0">
@@ -504,7 +528,6 @@
         </div>
       </div>
 
-      
       <div
         class="container-fluid p-0 pb-5 wow fadeIn d-flex flex-wrap my-5"
         data-wow-delay="0.1s"
@@ -767,8 +790,6 @@
       </div>
     </div>
 
-
-
     <div class="container my-5">
       <h1 class="text-center mb-4">CLOSETS PRICE CALCULATOR</h1>
 
@@ -949,7 +970,6 @@
           </div>
         </div>
 
-
         <!-- Section 3: Appliances -->
         <div class="form-section d-none">
           <h3>Choose type of material:</h3>
@@ -1065,87 +1085,232 @@
           </div>
         </div>
 
-
         <!-- Section 4: input -->
         <div class="form-section d-none">
-        <div style="flex: 1; padding-right: 20px;">
-          <div style="margin-bottom: 15px;">
-              <label for="kitchen-dimensions" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
+          <div style="flex: 1; padding-right: 20px">
+            <div style="margin-bottom: 15px">
+              <label
+                for="kitchen-dimensions"
+                style="
+                  display: block;
+                  font-size: 0.9em;
+                  color: #333;
+                  margin-bottom: 5px;
+                "
+              >
                 Enter parametrs of your wardrobe
               </label>
-              <input type="text" id="kitchen-dimensions" placeholder="Width/Depth/Height" style="width: 40%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 0.9em;">
-          </div>
-          <div style="display: flex; align-items: center; font-size: 0.9em;">
-              <input type="checkbox" id="no-dimensions" style="margin-right: 8px;">
-              <label for="no-dimensions" style="color: #333;">I don’t have dimensions yet</label>
-          </div>
-      </div>
-      </div>
-      
-
-         <!-- Section 5: date -->
-         <div class="form-section d-none">
-          <div style="width: 50%; background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px;">
-            <h2 style="font-size: 1.2em; color: #333; margin-bottom: 15px;">
-              When does your wardrobe need to be installed?</h2>
-            
-            <div style="margin-bottom: 10px;">
-                <input type="radio" id="budget1" name="budget" value="25000-35000" style="margin-right: 8px;">
-                <label for="budget1" style="font-size: 1em; color: #333;">Within 45 days</label>
+              <input
+                type="text"
+                id="kitchen-dimensions"
+                placeholder="Width/Depth/Height"
+                style="
+                  width: 40%;
+                  padding: 10px;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  font-size: 0.9em;
+                "
+              />
             </div>
-            
-            <div style="margin-bottom: 10px;">
-                <input type="radio" id="budget2" name="budget" value="35000-50000" style="margin-right: 8px;">
-                <label for="budget2" style="font-size: 1em; color: #333;">45 - 90 days</label>
+            <div style="display: flex; align-items: center; font-size: 0.9em">
+              <input
+                type="checkbox"
+                id="no-dimensions"
+                style="margin-right: 8px"
+              />
+              <label for="no-dimensions" style="color: #333"
+                >I don’t have dimensions yet</label
+              >
             </div>
-            
-            <div style="margin-bottom: 10px;">
-                <input type="radio" id="budget3" name="budget" value="50000-75000" style="margin-right: 8px;">
-                <label for="budget3" style="font-size: 1em; color: #333;">Choose the date below</label>
-            </div>
-            
-            <div style="width: 200px;">
-              <input type="date" id="calendar-input" placeholder="Calendar" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em;">
           </div>
         </div>
-      </div>
 
- <!-- Section 5: Details -->
-<div class="form-section d-none">
-  <div style="display: flex; width: 70%; background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px;">
- 
-   <!-- Form Section -->
-   <div style="flex: 1; padding-right: 20px;">
-       <div style="margin-bottom: 15px;">
-           <label for="kitchen-area" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
-              Name
-           </label>
-           <input type="text" id="kitchen-area"  style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 0.9em;">
-       </div>
-       <div style="margin-bottom: 15px;">
-           <label for="kitchen-dimensions" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
-               Contact
-           </label>
-           <input type="text" id="kitchen-dimensions" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 0.9em;">
-       </div>
-       <div style="margin-bottom: 15px;">
-        <label for="kitchen-dimensions" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
-            Message
-        </label>
-        <input type="text" id="kitchen-dimensions" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 0.9em;">
-    </div>
-    <div style="display: flex; align-items: center;">
-      <input type="file" id="file-input" style="font-size: 1em; margin-right: 10px;">
-  </div>
-      
-   </div>
+        <!-- Section 5: date -->
+        <div class="form-section d-none">
+          <div
+            style="
+              width: 50%;
+              background-color: white;
+              padding: 20px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              border-radius: 8px;
+            "
+          >
+            <h2 style="font-size: 1.2em; color: #333; margin-bottom: 15px">
+              When does your wardrobe need to be installed?
+            </h2>
 
-   <!-- Image Section -->
-   <div style="flex: 1; display: flex; align-items: center; justify-content: center; border-radius: 8px; overflow: hidden;">
-     <img src="./img/drawing2.jpg" alt="Kitchen Design Plans" style="width: 100%; height: auto; border-radius: 8px;">
- </div>
-</div>
-</div>
+            <div style="margin-bottom: 10px">
+              <input
+                type="radio"
+                id="budget1"
+                name="budget"
+                value="25000-35000"
+                style="margin-right: 8px"
+              />
+              <label for="budget1" style="font-size: 1em; color: #333"
+                >Within 45 days</label
+              >
+            </div>
+
+            <div style="margin-bottom: 10px">
+              <input
+                type="radio"
+                id="budget2"
+                name="budget"
+                value="35000-50000"
+                style="margin-right: 8px"
+              />
+              <label for="budget2" style="font-size: 1em; color: #333"
+                >45 - 90 days</label
+              >
+            </div>
+
+            <div style="margin-bottom: 10px">
+              <input
+                type="radio"
+                id="budget3"
+                name="budget"
+                value="50000-75000"
+                style="margin-right: 8px"
+              />
+              <label for="budget3" style="font-size: 1em; color: #333"
+                >Choose the date below</label
+              >
+            </div>
+
+            <div style="width: 200px">
+              <input
+                type="date"
+                id="calendar-input"
+                placeholder="Calendar"
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  font-size: 1em;
+                "
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 5: Details -->
+        <div class="form-section d-none">
+          <div
+            style="
+              display: flex;
+              width: 70%;
+              background-color: white;
+              padding: 20px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              border-radius: 8px;
+            "
+          >
+            <!-- Form Section -->
+            <div style="flex: 1; padding-right: 20px">
+              <div style="margin-bottom: 15px">
+                <label
+                  for="kitchen-area"
+                  style="
+                    display: block;
+                    font-size: 0.9em;
+                    color: #333;
+                    margin-bottom: 5px;
+                  "
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="kitchen-area"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 0.9em;
+                  "
+                />
+              </div>
+              <div style="margin-bottom: 15px">
+                <label
+                  for="kitchen-dimensions"
+                  style="
+                    display: block;
+                    font-size: 0.9em;
+                    color: #333;
+                    margin-bottom: 5px;
+                  "
+                >
+                  Contact
+                </label>
+                <input
+                  type="text"
+                  id="kitchen-dimensions"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 0.9em;
+                  "
+                />
+              </div>
+              <div style="margin-bottom: 15px">
+                <label
+                  for="kitchen-dimensions"
+                  style="
+                    display: block;
+                    font-size: 0.9em;
+                    color: #333;
+                    margin-bottom: 5px;
+                  "
+                >
+                  Message
+                </label>
+                <input
+                  type="text"
+                  id="kitchen-dimensions"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 0.9em;
+                  "
+                />
+              </div>
+              <div style="display: flex; align-items: center">
+                <input
+                  type="file"
+                  id="file-input"
+                  style="font-size: 1em; margin-right: 10px"
+                />
+              </div>
+            </div>
+
+            <!-- Image Section -->
+            <div
+              style="
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+                overflow: hidden;
+              "
+            >
+              <img
+                src="./img/drawing2.jpg"
+                alt="Kitchen Design Plans"
+                style="width: 100%; height: auto; border-radius: 8px"
+              />
+            </div>
+          </div>
+        </div>
 
         <!-- Navigation Buttons -->
         <div class="mt-4 d-flex justify-content-between">
@@ -1164,120 +1329,124 @@
       </form>
     </div>
 
-
-  
-<!-- social media -->
-<div class="social-media-sticky">
-  <div class="d-flex justify-content-around social-media-icons">
-    <div class="icon-block">
-      <a
-        class="btn btn-square btn-outline-body"
-        href="https://wa.me/+971569937768?text=Hi"
-      >
-        <i class="fab fa-whatsapp"></i>
-      </a>
-    </div>
-    <div class="icon-block">
-      <a class="btn btn-square btn-outline-body" href="#">
-        <i class="fa fa-phone-alt"></i>
-      </a>
-    </div>
-    <div class="icon-block">
-      <a class="btn btn-square btn-outline-body" href="#">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-    <div class="icon-block">
-      <a class="btn btn-square btn-outline-body" href="#">
-        <i class="fa fa-envelope"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- Footer Start -->
-<div
-  class="container-fluid bg-dark text-body footer px-0 wow fadeIn"
-  data-wow-delay="0.1s"
->
-  <div class="container py-3">
-    <div class="row g-3">
-      <div class="d-flex justify-content-between copyright">
-        <div class="col-lg-3 col-md-6">
-          <h3 class="text-light mb-4">Services</h3>
-          <a class="btn btn-link" href="./kitchens.html">Kitchens</a>
-          <a class="btn btn-link" href="./closets.html">Closets</a>
-          <a class="btn btn-link" href="./entertainment.html"
-            >Entertainment
-          </a>
-          <a class="btn btn-link" href="./wallcladding.html"
-            >Wall Cladding</a
+    <!-- social media -->
+    <div class="social-media-sticky">
+      <div class="d-flex justify-content-around social-media-icons">
+        <div class="icon-block">
+          <a
+            class="btn btn-square btn-outline-body"
+            href="https://wa.me/+971569937768?text=Hi"
           >
-          <a class="btn btn-link" href="./Maintenance.html">Maintenance</a>
-          <a class="btn btn-link" href="./InteriorDesign.html">Interior</a>
+            <i class="fab fa-whatsapp"></i>
+          </a>
         </div>
-
-        <div class="col-lg-3 col-md-6">
-          <h3 class="text-light mb-4">Quick Links</h3>
-          <a class="btn btn-link" href="./about.html">About Us</a>
-          <a class="btn btn-link" href="./contact.html">Contact </a>
-          <a class="btn btn-link" href="./service.html">Services</a>
-          <a class="btn btn-link" href="./contact.html">Support</a>
+        <div class="icon-block">
+          <a class="btn btn-square btn-outline-body" href="#">
+            <i class="fa fa-phone-alt"></i>
+          </a>
         </div>
-
-        <div class="col-lg-3 col-md-6 col-4" style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      ">
-          <a href="./index.html" class="ms-lg-0">
-            <img
-              class="img-fluid"
-              src="./img/fullLogo.png"
-              alt="Icon" style="filter: invert(85%) sepia(10%) saturate(0%) brightness(120%) contrast(100%);"
-            />
+        <div class="icon-block">
+          <a class="btn btn-square btn-outline-body" href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="icon-block">
+          <a class="btn btn-square btn-outline-body" href="#">
+            <i class="fa fa-envelope"></i>
           </a>
         </div>
       </div>
+    </div>
 
-      <div class="col-lg-12 col-md-12 text-center">
-        <h3 class="text-light mb-2">Address</h3>
-        <p class="mb-2">
-          <i class="fa fa-map-marker-alt text-primary me-3"></i>
-          Showroom 220, Al Asmawi Building, Umm Al Sheif,Sheikh Zayed Road,
-          Dubai
-        </p>
-        <p class="mb-2">
-          <i class="fa fa-phone-alt text-primary me-3"></i>+0569937768
-        </p>
-        <p class="mb-2">
-          <i class="fa fa-envelope text-primary me-3"></i
-          >marsinteriors@gmail.com
-        </p>
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-body footer px-0 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-3">
+        <div class="row g-3">
+          <div class="d-flex justify-content-between copyright">
+            <div class="col-lg-3 col-md-6">
+              <h3 class="text-light mb-4">Services</h3>
+              <a class="btn btn-link" href="./kitchens.html">Kitchens</a>
+              <a class="btn btn-link" href="./closets.html">Closets</a>
+              <a class="btn btn-link" href="./entertainment.html"
+                >Entertainment
+              </a>
+              <a class="btn btn-link" href="./wallcladding.html"
+                >Wall Cladding</a
+              >
+              <a class="btn btn-link" href="./Maintenance.html">Maintenance</a>
+              <a class="btn btn-link" href="./InteriorDesign.html">Interior</a>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <h3 class="text-light mb-4">Quick Links</h3>
+              <a class="btn btn-link" href="./about.html">About Us</a>
+              <a class="btn btn-link" href="./contact.html">Contact </a>
+              <a class="btn btn-link" href="./service.html">Services</a>
+              <a class="btn btn-link" href="./contact.html">Support</a>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 col-4"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <a href="./index.html" class="ms-lg-0">
+                <img
+                  class="img-fluid"
+                  src="./img/fullLogo.png"
+                  alt="Icon"
+                  style="
+                    filter: invert(85%) sepia(10%) saturate(0%) brightness(120%)
+                      contrast(100%);
+                  "
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-md-12 text-center">
+            <h3 class="text-light mb-2">Address</h3>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt text-primary me-3"></i>
+              Showroom 220, Al Asmawi Building, Umm Al Sheif,Sheikh Zayed Road,
+              Dubai
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt text-primary me-3"></i>+0569937768
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope text-primary me-3"></i
+              >marsinteriors@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a href="#">MARS INTERIORS</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              Designed By <a href="https://texpro.io">TexPro</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+    <!-- Footer End -->
 
-  <div class="container-fluid copyright">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          &copy; <a href="#">MARS INTERIORS</a>, All Right Reserved.
-        </div>
-        <div class="col-md-6 text-center text-md-end">
-          Designed By <a href="https://texpro.io">TexPro</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Footer End -->
-
-<!-- Back to Top -->
-<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-  ><i class="bi bi-arrow-up"></i
-></a>
-
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
