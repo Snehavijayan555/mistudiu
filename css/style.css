@@ -309,9 +309,16 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/kitchen\ head.jpg) center center no-repeat;
-    background-size:auto;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)) center center no-repeat;
     
+}
+
+.closet-header {
+    background-image: url('../img/closet-13.jpg');
+}
+
+.kitchen-header {
+    background-image: url('../img/kitchenhead.jpg');
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -628,7 +635,7 @@ h6,
 }
 
 .footer .copyright a:hover {
-    color: var(--primary);
+    color: #9fa5aa;
 }
 
 

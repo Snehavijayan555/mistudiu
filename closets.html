@@ -126,6 +126,12 @@
         bottom: 37%; /* Content above label 3 */
       }
 
+      #b6:hover ~ #content5 {
+        display: block;
+        left: 15%;
+        bottom: 78%; /* Content above label 3 */
+      }
+
       /* Adjust positions for labels */
       #b1 {
         left: 73%;
@@ -150,6 +156,11 @@
       #b5 {
         left: 46%;
         top: 47%;
+      }
+      
+      #b6{
+        left: 50%;
+        top: 80%;
       }
 
       .hidden {
@@ -408,7 +419,7 @@
     <!-- Navbar End -->
     <!-- Page Header Start -->
     <div
-      class="container-fluid page-header py-5 mb-5 wow fadeIn"
+      class="container-fluid page-header py-5 mb-5 wow fadeIn closet-header"
       data-wow-delay="0.1s"
     >
       <div class="container py-5">
@@ -434,7 +445,7 @@
           <div class="row g-4">
             <div class="col-md-6">
               <h1 class="mb-3">
-                Custom Wardrobes in UAE – Crafted to Perfection
+                Custom Closets in UAE – Crafted to Perfection
               </h1>
               <p class="mb-4">
                 Experience bespoke designs with MISTUDIU Kitchens & Closets UAE’s premier name in custom furniture design. We specialize in transforming your vision into reality, offering end-to-end solutions from concept creation to precision engineering. Our skilled team ensures every detail is perfected through meticulous design, detailed construction drawings, seamless assembly, and flawless installation, delivering custom wardrobes that blend luxury, functionality, and craftsmanship.
@@ -536,33 +547,33 @@
         <div class="owl-carousel kitchen-carousel position-relative col-md-8">
           <div
             class="owl-carousel-item position-relative px-2"
-            data-dot="<img src='img/carousel-1.jpg'>"
+            data-dot="<img src='./img/closetd1.jpg'>"
           >
             <img
               class="img-fluid"
-              src="./img/closet-1.jpg"
+              src="./img/closetd1.jpg"
               alt=""
               style="height: 400px"
             />
           </div>
           <div
             class="owl-carousel-item position-relative px-2"
-            data-dot="<img src='img/carousel-2.jpg'>"
+            data-dot="<img src='./img/closetd2.jpg'>"
           >
             <img
               class="img-fluid"
-              src="./img/closet-2.jpg"
+              src="./img/closetd2.jpg"
               alt=""
               style="height: 400px"
             />
           </div>
           <div
             class="owl-carousel-item position-relative px-2"
-            data-dot="<img src='img/carousel-3.jpg'>"
+            data-dot="<img src='./img/closet-13.jpg'>"
           >
             <img
               class="img-fluid"
-              src="./img/closet-3.jpg"
+              src="./img/closet-13.jpg"
               alt=""
               style="height: 400px"
             />
@@ -581,7 +592,7 @@
             <div class="p-3">
               <img
                 class="img-fluid"
-                src="./img/closet-1.jpg"
+                src="./img/closetf1.jpg"
                 alt=""
                 style="height: 200px"
               />
@@ -589,7 +600,7 @@
             <div class="p-3">
               <img
                 class="img-fluid"
-                src="./img/closet-2.jpg"
+                src="./img/closetf2.jpg"
                 alt=""
                 style="height: 200px"
               />
@@ -599,19 +610,19 @@
             <div class="p-3">
               <img
                 class="img-fluid"
-                src="./img/closet-3.jpg"
+                src="./img/closetf3.jpg"
                 alt=""
                 style="height: 200px"
               />
             </div>
-            <div class="p-3">
+            <!-- <div class="p-3">
               <img
                 class="img-fluid"
                 src="./img/closet-4.jpg"
                 alt=""
                 style="height: 200px"
               />
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -639,7 +650,7 @@
         id="hotspots-container"
         class="hidden w-90 mw-1200 mx-auto rounded shadow text-center"
         style="
-          background: url(./img/closet-7.jpg) center / cover no-repeat;
+          background: url(./img/closethotspot.jpg) center / cover no-repeat;
           display: none;
           max-height: 0;
           overflow: hidden;
@@ -660,16 +671,20 @@
             >Door System</label
           >
           <label for="hotspots3" id="b3" class="highlight absolute py-1 px-4"
-            >Carcas</label
+            >Smart System</label
           >
 
           <label for="hotspots4" id="b4" class="highlight absolute py-1 px-4"
-            >Smart System</label
+            >Carcas</label
           >
 
           <label for="hotspots5" id="b5" class="highlight absolute py-1 px-4"
             >Professional Team</label
           >
+
+          <label for="hotspots5" id="b6" class="highlight absolute py-1 px-4"
+          >Island</label
+        >
 
           <!-- Content for Each Hotspot -->
           <div id="content1" class="hotspot-content bg-white rounded shadow">
@@ -724,9 +739,9 @@
         data-wow-delay="0.1s"
         style="max-width: 600px"
       >
-        <h4 class="section-title">Our Projects</h4>
+        <h4 class="section-title">Bespoke Closet Designs</h4>
         <h1 class="display-5 mb-4">
-          Visit Our Latest Projects And Our Innovative Works
+          Explore our Bespoke Closet Designs
         </h1>
       </div>
 
@@ -734,41 +749,35 @@
         <div class="d-flex gap-5 flex-wrap justify-content-center">
           <div class="text-center col-md-3 col-12 project-card">
             <div class="img-container">
-              <img src="./img/closet-1.jpg" alt="" class="project-img" />
+              <img src="./img/sliding.jpg" alt="" class="project-img" />
             </div>
             <div class="p-4">
-              <h6 class="fw-bold">Free-Standing Cabinets</h6>
-              <p>
-                Free-standing cabinets are traditional furniture pieces
-                featuring a base, front, side walls, and a ceiling.
+              <h6 class="fw-bold">Open Closet</h6>
+              <p>Open closet designs offer a stylish and functional way to organize your clothing and accessories. This minimalist approach uses shelves to display your clothes and accessories. It's perfect for small spaces and creates a clean, modern look.
               </p>
             </div>
           </div>
 
           <div class="text-center col-md-3 col-12 project-card">
             <div class="img-container">
-              <img src="./img/closet-4.jpg" alt="" class="project-img" />
+              <img src="./img/hinged.jpg" alt="" class="project-img" />
             </div>
             <div class="p-4">
-              <h6 class="fw-bold">Built-In Wardrobes</h6>
+              <h6 class="fw-bold">Built-In Closet</h6>
               <p>
-                Built-in wardrobes are designed to fit entirely or partially
-                within a niche or small room, creating a seamless integration
-                into your living space.
+                These customizable systems allow you to create a wardrobe that fits your specific needs and space. You can choose from a variety of components, including shelves, drawers, and hanging rods.
               </p>
             </div>
           </div>
 
           <div class="text-center col-md-3 col-12 project-card">
             <div class="img-container">
-              <img src="./img/closet-10.jpg" alt="" class="project-img" />
+              <img src="./img/nodoor.jpg" alt="" class="project-img" />
             </div>
             <div class="p-4">
-              <h6 class="fw-bold">Dressing Rooms</h6>
+              <h6 class="fw-bold">Walk-in Closet</h6>
               <p>
-                A dressing room serves as a dedicated space not only for storing
-                clothing and accessories but also for selecting and trying on
-                outfits.
+                These spacious closets offer ample room for hanging clothes, shelves for folded items, and drawers for accessories.
               </p>
             </div>
           </div>
@@ -799,7 +808,7 @@
                   width="300"
                   height="200"
                 />
-                <p>Free-Standing Cabinets</p>
+                <p>Open Closet Design</p>
               </label>
             </div>
             <div class="text-center">
@@ -817,7 +826,7 @@
                   width="300"
                   height="200"
                 />
-                <p>Luxury Closet</p>
+                <p>Built-In Closets</p>
               </label>
             </div>
             <div class="text-center">
@@ -830,12 +839,12 @@
               />
               <label for="style2" class="selectable-item">
                 <img
-                  src="./img/closet-4.jpg"
+                  src="./img/walkin.jpg"
                   alt="classic style"
                   width="300"
                   height="200"
                 />
-                <p>Modern Closet</p>
+                <p>Walk-in Closets</p>
               </label>
             </div>
             <div class="text-center">
@@ -848,12 +857,12 @@
               />
               <label for="style2" class="selectable-item">
                 <img
-                  src="./img/closet-10.jpg"
+                  src="./img/modern.jpg"
                   alt="Modern Kitchen"
                   width="300"
                   height="200"
                 />
-                <p>Built-In Wardrobes</p>
+                <p>Modern Closets</p>
               </label>
             </div>
             <div class="text-center">
@@ -866,12 +875,12 @@
               />
               <label for="style2" class="selectable-item">
                 <img
-                  src="./img/closet-3.jpg"
+                  src="./img/closet-13.jpg"
                   alt="Modern Kitchen"
                   width="300"
                   height="200"
                 />
-                <p>Dressing Rooms</p>
+                <p>Luxury Closets</p>
               </label>
             </div>
             <div class="text-center">
@@ -889,7 +898,7 @@
                   width="300"
                   height="200"
                 />
-                <p>Other</p>
+                <p>Not Sure Yet</p>
               </label>
             </div>
           </div>
@@ -909,7 +918,7 @@
               />
               <label for="material1" class="selectable-item">
                 <img
-                  src="./img/sliding.webp"
+                  src="./img/sliding.jpg"
                   alt="matte"
                   width="300"
                   height="200"
@@ -927,7 +936,7 @@
               />
               <label for="material2" class="selectable-item">
                 <img
-                  src="./img/Hinged.webp"
+                  src="./img/hinged.jpg"
                   alt="Marble"
                   width="300"
                   height="200"
@@ -945,7 +954,7 @@
               />
               <label for="material3" class="selectable-item">
                 <img
-                  src="./img/No doors.jpg"
+                  src="./img/nodoor.jpg"
                   alt="Marble"
                   width="300"
                   height="200"
@@ -970,7 +979,7 @@
               />
               <label for="type1" class="selectable-item">
                 <img
-                  src="./img/matte.webp"
+                  src="./img/matte.jpg"
                   alt="matte"
                   width="300"
                   height="200"
@@ -988,12 +997,12 @@
               />
               <label for="type2" class="selectable-item">
                 <img
-                  src="./img/gloss.webp"
+                  src="./img/gloss.jpg"
                   alt="Marble"
                   width="300"
                   height="200"
                 />
-                <p>Gloss</p>
+                <p>Glossy</p>
               </label>
             </div>
             <div class="text-center">
@@ -1024,12 +1033,12 @@
               />
               <label for="type4" class="selectable-item">
                 <img
-                  src="./img/mirror.jpg"
+                  src="./img/stone.jpg"
                   alt="Marble"
                   width="300"
                   height="200"
                 />
-                <p>Mirror</p>
+                <p>Concrete Texture</p>
               </label>
             </div>
             <div class="text-center">
@@ -1047,7 +1056,7 @@
                   width="300"
                   height="200"
                 />
-                <p>Paneled</p>
+                <p>Framed Doors</p>
               </label>
             </div>
             <div class="text-center">
@@ -1065,7 +1074,7 @@
                   width="300"
                   height="200"
                 />
-                <p>Glass</p>
+                <p>Glass Doors</p>
               </label>
             </div>
           </div>
