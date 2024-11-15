@@ -309,8 +309,8 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/carousel-1.jpg) center center no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/kitchen\ head.jpg) center center no-repeat;
+    background-size:auto;
     
 }
 
@@ -592,7 +592,7 @@ h6,
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: #777777;
+    color: white;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
@@ -603,12 +603,12 @@ h6,
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    color: var(--primary);
+    color: #9fa5aa;
     margin-right: 10px;
 }
 
 .footer .btn.btn-link:hover {
-    color: var(--primary);
+    color: #9fa5aa;
     letter-spacing: 1px;
     box-shadow: none;
 }
@@ -671,7 +671,7 @@ h6,
   }
   
   .btn-square:hover {
-    background-color: #9a7858;
+    background-color: #9fa5aa;
   }
   
   .btn-outline-body i {
@@ -729,4 +729,22 @@ h6,
 }
 
 
+
+.text-outline {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 3rem; /* Adjust font size as needed */
+    text-align: center;
+    font-family: DmSans-Heading;
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text; /* For other browsers */
+    color: black;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+  }
+
+ 
 
