@@ -664,7 +664,7 @@ h6,
 }
 
 .footer .copyright a {
-    color: var(--light);
+    color: #7f7f7f;
 }
 
 .footer .copyright a:hover {
