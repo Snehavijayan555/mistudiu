@@ -325,6 +325,10 @@ h6,
     background-image: url('../img/tvhead.jpg');
 }
 
+.kidsroom-header {
+    background-image: url('../img/kidshead.jpg');
+}
+
 .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
