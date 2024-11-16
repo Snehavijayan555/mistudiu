@@ -329,6 +329,10 @@ h6,
     background-image: url('../img/kidshead.jpg');
 }
 
+.vanity-header {
+    background-image: url('../img/vanityhead.jpg');
+}
+
 .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
