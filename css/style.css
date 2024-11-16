@@ -786,5 +786,24 @@ h6,
     -webkit-text-stroke-color: rgb(255, 255, 255);
   }
 
- 
+  .highlight {
+    font-size: 16px; /* Default size */
+    padding: 0.5em 1em; /* Default padding */
+    border-radius: 8px; /* Keeps rounded corners */
+  }
+
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .highlight {
+      font-size: 10px; /* Smaller text size */
+      padding: 0.3em 0.5em; /* Reduced padding */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .highlight {
+      font-size: 8px; /* Tiny text for very small screens */
+      padding: 0.2em 0.4em; /* Very compact padding */
+    }
+  }
 
