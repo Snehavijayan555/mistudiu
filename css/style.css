@@ -310,12 +310,8 @@ h6,
 
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) center center no-repeat;
-    background-size: cover; /* Ensures the image covers the entire header */
-    background-position: center; /* Centers the image */
-    height: 40vh; /* Sets the height of the header */
-    display: flex; /* Flexbox for aligning content */
-    align-items: center; /* Vertical alignment of content */
-    justify-content: center; /* Horizontal alignment of content */
+    background-size: cover; /* Ensures the image covers the header area */
+    background-position: center; /* Centers the image within the header */
 }
 
 .closet-header {
