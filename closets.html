@@ -325,6 +325,16 @@
         transform: scale(1.1); /* Zoom-in effect */
       }
     </style>
+    <style>
+      @media screen and (max-width: 768px) {
+        .form-section {
+          padding: 10px;
+        }
+        .form-section > div {
+          flex-direction: column;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -1179,119 +1189,75 @@
         </div>
 
         <!-- Section 5: Details -->
-        <div class="form-section d-none">
-          <div
-            style="
-              display: flex;
-              width: 70%;
-              background-color: white;
-              padding: 20px;
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-              border-radius: 8px;
-            "
-          >
+        <div class="form-section d-none" style="padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+          <div style="
+              display: flex; 
+              flex-wrap: wrap; 
+              gap: 20px; 
+              justify-content: center; 
+              align-items: flex-start;
+              max-width: 100%; 
+              margin: auto;">
             <!-- Form Section -->
-            <div style="flex: 1; padding-right: 20px">
-              <div style="margin-bottom: 15px">
-                <label
-                  for="kitchen-area"
-                  style="
-                    display: block;
-                    font-size: 0.9em;
-                    color: #333;
-                    margin-bottom: 5px;
-                  "
-                >
+            <div style="
+                flex: 1; 
+                min-width: 280px; 
+                max-width: 100%; 
+                padding-right: 20px;">
+              <div style="margin-bottom: 15px;">
+                <label for="kitchen-area" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
                   Name
                 </label>
-                <input
-                  type="text"
-                  id="kitchen-area"
-                  style="
-                    width: 100%;
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 5px;
-                    font-size: 0.9em;
-                  "
-                />
+                <input type="text" id="kitchen-area" style="
+                    width: 100%; 
+                    padding: 10px; 
+                    border: 1px solid #ccc; 
+                    border-radius: 5px; 
+                    font-size: 0.9em;">
               </div>
-              <div style="margin-bottom: 15px">
-                <label
-                  for="kitchen-dimensions"
-                  style="
-                    display: block;
-                    font-size: 0.9em;
-                    color: #333;
-                    margin-bottom: 5px;
-                  "
-                >
+              <div style="margin-bottom: 15px;">
+                <label for="kitchen-dimensions" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
                   Contact
                 </label>
-                <input
-                  type="text"
-                  id="kitchen-dimensions"
-                  style="
-                    width: 100%;
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 5px;
-                    font-size: 0.9em;
-                  "
-                />
+                <input type="text" id="kitchen-dimensions" style="
+                    width: 100%; 
+                    padding: 10px; 
+                    border: 1px solid #ccc; 
+                    border-radius: 5px; 
+                    font-size: 0.9em;">
               </div>
-              <div style="margin-bottom: 15px">
-                <label
-                  for="kitchen-dimensions"
-                  style="
-                    display: block;
-                    font-size: 0.9em;
-                    color: #333;
-                    margin-bottom: 5px;
-                  "
-                >
+              <div style="margin-bottom: 15px;">
+                <label for="message" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
                   Message
                 </label>
-                <input
-                  type="text"
-                  id="kitchen-dimensions"
-                  style="
-                    width: 100%;
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 5px;
-                    font-size: 0.9em;
-                  "
-                />
+                <input type="text" id="message" style="
+                    width: 100%; 
+                    padding: 10px; 
+                    border: 1px solid #ccc; 
+                    border-radius: 5px; 
+                    font-size: 0.9em;">
               </div>
-              <div style="display: flex; align-items: center">
-                <input
-                  type="file"
-                  id="file-input"
-                  style="font-size: 1em; margin-right: 10px"
-                />
+              <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                <input type="file" id="file-input" style="font-size: 1em; margin-right: 10px;">
               </div>
             </div>
-
             <!-- Image Section -->
-            <div
-              style="
-                flex: 1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 8px;
-                overflow: hidden;
-              "
-            >
-              <img
-                src="./img/drawing2.jpg"
-                alt="Kitchen Design Plans"
-                style="width: 100%; height: auto; border-radius: 8px"
-              />
+            <div style="
+                flex: 1; 
+                min-width: 280px; 
+                max-width: 100%; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                border-radius: 8px; 
+                overflow: hidden;">
+              <img src="./img/drawing2.jpg" alt="Kitchen Design Plans" style="
+                  width: 100%; 
+                  height: auto; 
+                  border-radius: 8px;">
             </div>
           </div>
-        </div>
+          </div>`
 
         <!-- Navigation Buttons -->
         <div class="mt-4 d-flex justify-content-between">
