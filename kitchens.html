@@ -55,10 +55,9 @@
       }
     </style>
 
- <style>
-
+<style>
        /* Kitchen text styling */
-       .image-text {
+      .image-text {
         position: absolute;
         top: 5%;
         left: 50%;
@@ -100,17 +99,20 @@
 
       /* Position content above respective labels */
       #b1:hover ~ #content1 {
+        padding: 1px;
         display: block;
         bottom: 80%; /* Content above label 1 */
         left: 50%;
       }
 
       #b2:hover ~ #content2 {
+        padding: 1px;
         display: block;
         bottom: 64%; /* Content above label 2 */
       }
 
       #b3:hover ~ #content3 {
+        padding: 1px;
         display: block;
         left: 55%;
         bottom: 37%; /* Content above label 3 */
@@ -119,12 +121,14 @@
       #b4:hover ~ #content4 {
         display: block;
         bottom: 37%; /* Content above label 3 */
+        padding: 1px;
       }
 
       #b5:hover ~ #content5 {
         display: block;
         left: 5%;
         bottom: 37%; /* Content above label 3 */
+        padding: 1px;
       }
 
       /* Adjust positions for labels */
@@ -239,7 +243,12 @@
         }
 
         .hotspot-content {
-          width: 90%;
+          width: 40%;
+          height: 20%;
+        }
+
+        .leading-relaxed{
+          font-size: 5px;
         }
       }
 
@@ -271,7 +280,6 @@
       }
 </style>
 
- </style>
     <style>
       .selectable-item {
         cursor: pointer;
@@ -694,8 +702,8 @@
           >
 
           <!-- Content for Each Hotspot -->
-          <div id="content1" class="hotspot-content bg-white rounded shadow">
-            <p class="m-1 text-s leading-relaxed">
+          <div id="content1" class="hotspot-content bg-white rounded shadow " >
+            <p class="m-1 leading-relaxed">
               Found in Akaka Falls State Park, Akaka Falls is a magnificent
               sight, cascading 135 metres from a cliff in lush, misty
               rainforest. Twice the height of Niagara Falls, the free-falling
@@ -703,7 +711,7 @@
             </p>
           </div>
 
-          <div id="content2" class="hotspot-content bg-white rounded shadow">
+          <div id="content2" class="hotspot-content bg-white rounded shadow ">
             <p class="m-1 text-s leading-relaxed">
               With lava flows dating back some 250,000 years ago, Kilauea is the
               youngest of the 5 active volcanoes in Hawaii – but it's also the
@@ -711,7 +719,7 @@
             </p>
           </div>
 
-          <div id="content3" class="hotspot-content bg-white rounded shadow">
+          <div id="content3" class="hotspot-content bg-white rounded shadow ">
             <p class="m-1 text-s leading-relaxed">
               Molokai island’s towering sea cliffs give it a dramatic landscape,
               but there’s just as much beauty to behold in the depths of the sea
@@ -719,7 +727,7 @@
             </p>
           </div>
 
-          <div id="content4" class="hotspot-content bg-white rounded shadow">
+          <div id="content4" class="hotspot-content bg-white rounded shadow ">
             <p class="m-1 text-s leading-relaxed">
               Molokai island’s towering sea cliffs give it a dramatic landscape,
               but there’s just as much beauty to behold in the depths of the sea
@@ -727,7 +735,7 @@
             </p>
           </div>
 
-          <div id="content5" class="hotspot-content bg-white rounded shadow">
+          <div id="content5" class="hotspot-content bg-white rounded shadow ">
             <p class="m-1 text-s leading-relaxed">
               Molokai island’s towering sea cliffs give it a dramatic landscape,
               but there’s just as much beauty to behold in the depths of the sea
