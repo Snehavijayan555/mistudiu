@@ -56,8 +56,8 @@
     </style>
 
     <style>
-      /* Kitchen text styling */
-      .image-text {
+            /* Kitchen text styling */
+            .image-text {
         position: absolute;
         top: 5%;
         left: 50%;
@@ -99,17 +99,20 @@
 
       /* Position content above respective labels */
       #b1:hover ~ #content1 {
+        padding: 1px;
         display: block;
         bottom: 80%; /* Content above label 1 */
         left: 50%;
       }
 
       #b2:hover ~ #content2 {
+        padding: 1px;
         display: block;
         bottom: 64%; /* Content above label 2 */
       }
 
       #b3:hover ~ #content3 {
+        padding: 1px;
         display: block;
         left: 55%;
         bottom: 37%; /* Content above label 3 */
@@ -118,20 +121,22 @@
       #b4:hover ~ #content4 {
         display: block;
         bottom: 37%; /* Content above label 3 */
+        padding: 1px;
       }
 
       #b5:hover ~ #content5 {
         display: block;
         left: 5%;
         bottom: 37%; /* Content above label 3 */
+        padding: 1px;
       }
 
       #b6:hover ~ #content5 {
         display: block;
-        left: 15%;
-        bottom: 78%; /* Content above label 3 */
+        left: 5%;
+        bottom: 27%; /* Content above label 3 */
+        padding: 1px;
       }
-
       /* Adjust positions for labels */
       #b1 {
         left: 73%;
@@ -249,7 +254,12 @@
         }
 
         .hotspot-content {
-          width: 90%;
+          width: 40%;
+          height: 20%;
+        }
+
+        .leading-relaxed{
+          font-size: 5px;
         }
       }
 
@@ -261,27 +271,29 @@
         }
 
         #b2 {
-          left: 18%;
+          left: 5%;
           top: 35%;
-        }
-
-        #b4 {
-          top: 55%;
         }
 
         #b3 {
-          top: 35%;
+          top: 45%;
           left: 60%;
         }
 
         #b4 {
           left: 20%;
+          top: 54%;
         }
 
         #b5 {
           top: 65%;
-          left: 40%;
+          left: 55%;
         }
+
+        #b6 {
+       left: 30%;
+      top: 80%;
+    }
       }
     </style>
     <style>
@@ -735,6 +747,14 @@
           </div>
 
           <div id="content5" class="hotspot-content bg-white rounded shadow">
+            <p class="m-2 text-s leading-relaxed">
+              Molokai island’s towering sea cliffs give it a dramatic landscape,
+              but there’s just as much beauty to behold in the depths of the sea
+              waters that surround it.
+            </p>
+          </div>
+
+          <div id="content6" class="hotspot-content bg-white rounded shadow">
             <p class="m-2 text-s leading-relaxed">
               Molokai island’s towering sea cliffs give it a dramatic landscape,
               but there’s just as much beauty to behold in the depths of the sea
