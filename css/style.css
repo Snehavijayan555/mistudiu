@@ -771,21 +771,21 @@ h6,
 
 
 
-.text-outline {
+/* .text-outline {
     position: absolute;
-    bottom: 20px; /* Adjust as needed */
+    bottom: 20px;
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    font-size: 3rem; /* Adjust font size as needed */
+    transform: translateX(-50%); 
+    font-size: 3rem; 
     text-align: center;
     font-family: DmSans-Heading;
-    -webkit-background-clip: text; /* For Safari */
-    background-clip: text; /* For other browsers */
+    -webkit-background-clip: text; 
+    background-clip: text; 
     color: black;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
-  }
+  } */
 
   .highlight {
     font-size: 16px; /* Default size */
