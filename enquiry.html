@@ -1928,15 +1928,58 @@
     }else if (serviceDropdown.value === "tvWall") {
       tvWallQuote.classList.remove("d-none");
   }else if (serviceDropdown.value === "kidsRoom") {
-    kidsRoomQuote.classList.remove("d-none");{}
+    kidsRoomQuote.classList.remove("d-none");
    }else if (serviceDropdown.value === "vanities") {
       vanitiesQuote.classList.remove("d-none");
   }else if (serviceDropdown.value === "other") {
       otherQuote.classList.remove("d-none");
   }
-}
-  
+  }
 </script>
 
+
+<script>
+  const sections = document.querySelectorAll(".form-section");
+  let currentSectionIndex = 0;
+
+  const nextButton = document.getElementById("nextButton");
+  const prevButton = document.getElementById("prevButton");
+
+  // Function to show the current section based on index
+  function showSection(index) {
+    sections.forEach((section, i) => {
+      section.classList.toggle("d-none", i !== index);
+    });
+
+    // Update button states
+    prevButton.disabled = index === 0;
+    nextButton.textContent =
+      index === sections.length - 1 ? "Submit" : "Next";
+  }
+
+  // Next button event
+  nextButton.addEventListener("click", () => {
+    if (currentSectionIndex < sections.length - 1) {
+      currentSectionIndex++;
+      showSection(currentSectionIndex);
+    } else {
+      // Submit the form on the final step
+      alert("Form submitted!");
+    }
+  });
+
+  // Previous button event
+  prevButton.addEventListener("click", () => {
+    if (currentSectionIndex > 0) {
+      currentSectionIndex--;
+      showSection(currentSectionIndex);
+    }
+  });
+
+  // Initialize the first section
+  showSection(currentSectionIndex);
+</script>
+
+ 
   </body>
 </html>
