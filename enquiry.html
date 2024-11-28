@@ -39,6 +39,25 @@
 
     <!-- Template Stylesheet -->
     <link href="./css/style.css" rel="stylesheet" />
+
+
+    <style>
+      .form-section {
+        margin-bottom: 30px;
+      }
+      .selectable-item {
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        transition: border-color 0.3s;
+      }
+      .selectable-item:hover {
+        border-color: #007bff;
+      }
+    </style>
+
   </head>
 
 
@@ -51,30 +70,7 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-3">
-                    <a class="text-body px-2" href="tel:+0123456789"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789</a>
-                    <a class="text-body px-2" href="mailto:info@example.com"><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</a>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-2">
-                    <a class="text-body px-2" href="">Terms</a>
-                    <a class="text-body px-2" href="">Privacy</a>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-0" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Topbar End -->
+   
 
 
     <!-- Navbar Start -->
@@ -116,7 +112,7 @@
           <a href="./project.html" class="nav-item nav-link">Portfolio</a>
           <a href="./about.html" class="nav-item nav-link">About</a>
          
-          <a href="./contact.html" class="nav-item nav-link active">Contact</a>
+          <a href="./contact.html" class="nav-item nav-link">Contact</a>
         </div>
 
         <a href="https://wa.me/971569937768?text=Hi" class="btn btn-primary" role="button">+971569937768</a>
@@ -128,11 +124,11 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn contact-header" data-wow-delay="0.1s">
         <div class="container py-5">
-            <h1 class="display-1 text-white animated slideInDown">Contact Us</h1>
+            <h1 class="display-1 text-white animated slideInDown">Enquiry</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb text-uppercase mb-0">
                     <li class="breadcrumb-item"><a class="text-white" href="./index.html">Home</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">Contact Us</li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Enquiry</li>
                 </ol>
             </nav>
         </div>
@@ -141,88 +137,1378 @@
 
 
     <!-- Contact Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h4 class="section-title">Contact Us</h4>
-                <h1 class="display-5 mb-4">If You Have Any Query, Please Feel Free Contact Us</h1>
-            </div>
-            <div class="row g-5">
-              
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <p class="mb-4">Our Professional Architects and Interior Designers have a unique creative vision of how your dream space will work the best for you. Learn more about our services and contact us. </p>
-                    <!-- <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                              <button class="btn btn-primary w-100 py-3" onclick="sendWhatsAppMessage()">
-                                Send Message
-                              </button>
-                            </div>
-                        </div>
-                    </form> -->
+  <div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+      <h4 class="section-title">Enquiry</h4>
+      <h1 class="display-5 mb-4">Got questions? We're here to help—reach out to us anytime!</h1>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <p class="mb-4">
+          Our Professional Architects and Interior Designers have a unique creative vision of how your dream space will work the best for you. Learn more about our services and contact us.
+        </p>
 
-
-                    <div class="row g-5 wow fadeInUp" data-wow-delay="0.5s">
-                      <div class="row g-3">
-                        <div class="col-12 col-sm-6">
-                          <input type="text" class="form-control" id="userName" placeholder="Your Name" style="height: 55px" />
-                        </div>
-                        <div class="col-12 col-sm-6">
-                          <input type="email" class="form-control" id="userEmail" placeholder="Your Email" style="height: 55px" />
-                        </div>
-                        <div class="col-12 col-sm-6">
-                          <input type="text" class="form-control" id="userMobile" placeholder="Your Mobile" style="height: 55px" />
-                        </div>
-                        <div class="col-12 col-sm-6">
-                          <select class="form-select" id="userService" style="height: 55px">
-                            <option selected>Choose Service</option>
-                  <option value="kitchens">Kitchens</option>
-                  <option value="closets">Closets</option>
-                  <option value="entertainment">TV Wall</option>
-                  <option value="cladding">KidsRoom</option>
-                  <option value="maintenance">Vanities</option>
-                  <option value="design">Other Furnitures</option>
-                  <option value="design">Other Services</option>
-                          </select>
-                        </div>
-                        <div class="col-12">
-                          <textarea class="form-control" id="userMessage" rows="5" placeholder="Message"></textarea>
-                        </div>
-                        <div class="col-12">
-                          <button class="btn btn-primary w-100 py-3" onclick="sendWhatsAppMessage()">
-                            Book Appointment
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-
-                </div>
-            </div>
+        <!-- Enquiry Form -->
+        <div class="row g-3">
+          <div class="col-12 col-sm-6">
+            <input type="text" class="form-control" id="userName" placeholder="Your Name" style="height: 55px;" />
+          </div>
+          <div class="col-12 col-sm-6">
+            <input type="email" class="form-control" id="userEmail" placeholder="Your Email" style="height: 55px;" />
+          </div>
+          <div class="col-12 col-sm-6">
+            <input type="text" class="form-control" id="userMobile" placeholder="Your Mobile" style="height: 55px;" />
+          </div>
+          <div class="col-12 col-sm-6">
+            <select class="form-select" id="userService" style="height: 55px;" onchange="toggleCalculator()">
+              <option selected value="">Choose Service</option>
+              <option value="kitchens">Kitchens</option>
+              <option value="closets">Closets</option>
+              <option value="furniture">Other Furniture</option>
+              <option value="entertainment">TV Wall</option>
+              <option value="cladding">KidsRoom</option>
+              <option value="maintenance">Vanities</option>
+              <option value="design">Other Services</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary w-100 py-3" onclick="sendWhatsAppMessage()">
+              Book Appointment
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
+        <!-- Kitchen Price Calculator -->
+        <div id="kitchenCalculator" class="container my-5 d-none">
+          <h1 class="text-center mb-4">KITCHEN PRICE CALCULATOR</h1>
+    
+          <form>
+            <!-- Section 1: Style -->
+            <div class="form-section">
+              <h3>Choose your kitchen Style</h3>
+              <div class="d-flex gap-5 flex-wrap">
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="style1"
+                    name="kitchenStyle"
+                    value="Luxury"
+                    hidden
+                  />
+                  <label for="style1" class="selectable-item">
+                    <img
+                      src="./img/kitchen calc/IMG-20241119-WA0030.jpg"
+                      alt="Luxury Kitchen"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Modern Luxury</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="style2"
+                    name="kitchenStyle"
+                    value="Modern"
+                    hidden
+                  />
+                  <label for="style2" class="selectable-item">
+                    <img
+                      src="./img/kitchen calc/IMG-20241119-WA0011.jpg"
+                      alt="Modern Kitchen"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Modern Minimalist</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="style3"
+                    name="kitchenStyle"
+                    value="Modern"
+                    hidden
+                  />
+                  <label for="style3" class="selectable-item">
+                    <img
+                      src="./img/kitchen calc/IMG-20241119-WA0023.jpg"
+                      alt="classic style"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Classic Style</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="style4"
+                    name="kitchenStyle"
+                    value="Modern"
+                    hidden
+                  />
+                  <label for="style4" class="selectable-item">
+                    <img
+                      src="./img/kitchen calc/IMG-20241119-WA0031.jpg"
+                      alt="Modern Kitchen"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Modern Scandinavian</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="style5"
+                    name="kitchenStyle"
+                    value="Modern"
+                    hidden
+                  />
+                  <label for="style5" class="selectable-item">
+                    <img
+                      src="./img/kitchen calc/IMG-20241119-WA0025.jpg"
+                      alt="Modern Kitchen"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Industrial</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="style6"
+                    name="kitchenStyle"
+                    value="Modern"
+                    hidden
+                  />
+                  <label for="style6" class="selectable-item">
+                    <img
+                      src="./img/other.png"
+                      alt="Mars"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Not Sure Yet</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Section 2: Material -->
+            <div class="form-section d-none">
+              <h3>Choose your facades type</h3>
+              <div class="d-flex gap-5 flex-wrap">
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="material1"
+                    name="kitchenMaterial"
+                    value="Granite"
+                    hidden
+                  />
+                  <label for="material1" class="selectable-item">
+                    <img
+                      src="./img/matte.jpg"
+                      alt="matte"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Matte</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="material2"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="material2" class="selectable-item">
+                    <img
+                      src="./img/gloss.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Gloss</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="material3"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="material3" class="selectable-item">
+                    <img
+                      src="./img/wood.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Wood Texture</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="material4"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="material4" class="selectable-item">
+                    <img
+                      src="./img/stone.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Concrete Texture</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="material5"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="material5" class="selectable-item">
+                    <img
+                      src="./img/paneled.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Paneled</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="material6"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="material6" class="selectable-item">
+                    <img
+                      src="./img/glass.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Glass</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+    
+    
+            <!-- Section 3: Appliances -->
+            <div class="form-section d-none">
+              <h3>Choose your kitchen layout type</h3>
+              <div class="d-flex gap-5 flex-wrap">
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="layout1"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="layout1" class="selectable-item">
+                    <img
+                      src="./img/linear.png"
+                      alt="Marble"
+                      width="110"
+                      height="60"
+                    />
+                    <p>Linear</p>
+                  </label>
+                </div>
+               
+               
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="layout2"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="layout2" class="selectable-item">
+                    <img
+                      src="./img/linearwithisland.png"
+                      alt="Marble"
+                      width="110"
+                      height="60"
+                    />
+                    <p>Linear with island</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="layout3"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="layout3" class="selectable-item">
+                    <img
+                      src="./img/l shape.png"
+                      alt="Marble"
+                      width="110"
+                      height="60"
+                    />
+                    <p>L Shape</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="layout4"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="layout4" class="selectable-item">
+                    <img
+                      src="./img/lshapewithisland.png"
+                      alt="Marble"
+                      width="110"
+                      height="60"
+                    />
+                    <p>L Shape with Island</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="layout5"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="layout5" class="selectable-item">
+                    <img
+                      src="./img/ushape.png"
+                      alt="Marble"
+                      width="110"
+                      height="60"
+                    />
+                    <p>U Shape</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="layout6"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="layout6" class="selectable-item">
+                    <img
+                      src="./img/ushapewithisland.png"
+                      alt="Marble"
+                      width="110"
+                      height="60"
+                    />
+                    <p>U Shape with Island</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="layout7"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="layout7" class="selectable-item">
+                    <img
+                      src="./img/galleykitchen.png"
+                      alt="Marble"
+                      width="110"
+                      height="60"
+                    />
+                    <p>Galley Kitchen</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="layout8"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="layout8" class="selectable-item">
+                    <img
+                      src="./img/cshape.png"
+                      alt="Marble"
+                      width="110"
+                      height="60"
+                    />
+                    <p>C Shape</p>
+                  </label>
+                </div>
+    
+              </div>
+            </div>
+    
+            <!-- Section 4: Material -->
+            <div class="form-section d-none">
+              <h3>Choose material for a worktop and (if needed) backsplash</h3>
+              <div class="d-flex gap-5 flex-wrap">
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="worktop1"
+                    name="kitchenMaterial"
+                    value="Granite"
+                    hidden
+                  />
+                  <label for="worktop1" class="selectable-item">
+                    <img
+                      src="./img/quartz.jpg"
+                      alt="matte"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Quartz</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="worktop2"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="worktop2" class="selectable-item">
+                    <img
+                      src="./img/Porcelain.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Porcelain</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="worktop3"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="worktop3" class="selectable-item">
+                    <img
+                      src="./img/Granite.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Natural Marble</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="worktop4"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="worktop4" class="selectable-item">
+                    <img
+                      src="./img/other.png"
+                      alt="other"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Not Sure Yet</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+    
+    
+             <!-- Section 5: Input -->
+             <div class="form-section d-none" style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div style="
+                  display: flex; 
+                  flex-wrap: wrap; 
+                  gap: 20px; 
+                  justify-content: center; 
+                  align-items: flex-start; 
+                  max-width: 100%; 
+                  margin: auto;">
+                
+                <!-- Form Section -->
+                <div style="
+                    flex: 1; 
+                    min-width: 280px; 
+                    max-width: 100%; 
+                    padding-right: 20px;">
+                  <div style="margin-bottom: 15px;">
+                    <label for="kitchen-area" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
+                      Enter total length of kitchen walls for cabinets (e.g., 3m plus 4m for L-shape kitchen is total of 7 meters)
+                    </label>
+                    <input type="text" id="kitchen-area" placeholder="Kitchen area" style="
+                        width: 100%; 
+                        padding: 10px; 
+                        border: 1px solid #ccc; 
+                        border-radius: 5px; 
+                        font-size: 0.9em;">
+                  </div>
+                  <div style="margin-bottom: 15px;">
+                    <label for="kitchen-dimensions" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
+                      Enter the height of your kitchen
+                    </label>
+                    <input type="text" id="kitchen-dimensions" placeholder="Width/Depth/Height" style="
+                        width: 100%; 
+                        padding: 10px; 
+                        border: 1px solid #ccc; 
+                        border-radius: 5px; 
+                        font-size: 0.9em;">
+                  </div>
+                  <div style="display: flex; align-items: center; font-size: 0.9em;">
+                    <input type="checkbox" id="no-dimensions" style="margin-right: 8px;">
+                    <label for="no-dimensions" style="color: #333;">I don't have dimensions of kitchen</label>
+                  </div>
+                </div>
+            
+                <!-- Image Section -->
+                <div style="
+                    flex: 1; 
+                    min-width: 280px; 
+                    max-width: 100%; 
+                    display: flex; 
+                    align-items: center; 
+                    justify-content: center; 
+                    border-radius: 8px; 
+                    overflow: hidden;">
+                  <img src="./img/drawing.jpg" alt="Kitchen Design Plans" style="
+                      width: 100%; 
+                      height: auto; 
+                      border-radius: 8px;">
+                </div>
+              </div>
+              </div>
+    
+     <!-- Section 5: Budget -->
+     <!-- <div class="form-section d-none" style="padding: 20px; display: flex; justify-content: center; align-items: center;">
+      <div style="
+          width: 100%; 
+          max-width: 400px; 
+          background-color: white; 
+          padding: 20px; 
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+          border-radius: 8px;">
+        <h2 style="font-size: 1.2em; color: #333; margin-bottom: 15px; text-align: center;">Budget for your kitchen cabinets (with worktop)</h2>
+        
+        <div style="margin-bottom: 10px;">
+          <input type="radio" id="budget1" name="budget" value="25000-35000" style="margin-right: 8px;">
+          <label for="budget1" style="font-size: 1em; color: #333;">25 000 - 35 000</label>
+        </div>
+        
+        <div style="margin-bottom: 10px;">
+          <input type="radio" id="budget2" name="budget" value="35000-50000" style="margin-right: 8px;">
+          <label for="budget2" style="font-size: 1em; color: #333;">35 000 - 50 000</label>
+        </div>
+        
+        <div style="margin-bottom: 10px;">
+          <input type="radio" id="budget3" name="budget" value="50000-75000" style="margin-right: 8px;">
+          <label for="budget3" style="font-size: 1em; color: #333;">50 000 - 75 000</label>
+        </div>
+        
+        <div style="margin-bottom: 10px;">
+          <input type="radio" id="budget4" name="budget" value="75000+" style="margin-right: 8px;">
+          <label for="budget4" style="font-size: 1em; color: #333;">75 000 and more</label>
+        </div>
+      </div>
+      </div> -->
+    
+    
+      <!-- Section 6: Date -->
+      <div class="form-section d-none" style="padding: 20px; display: flex; justify-content: center; align-items: center;">
+        <div style="
+            width: 100%; 
+            max-width: 400px; 
+            background-color: white; 
+            padding: 20px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            border-radius: 8px;">
+          <h2 style="font-size: 1.2em; color: #333; margin-bottom: 15px; text-align: center;">When does your kitchen need to be installed?</h2>
+          
+          <div style="margin-bottom: 10px;">
+            <input type="radio" id="budget1" name="budget" value="25000-35000" style="margin-right: 8px;">
+            <label for="budget1" style="font-size: 1em; color: #333;">Within 45 days</label>
+          </div>
+          
+          <div style="margin-bottom: 10px;">
+            <input type="radio" id="budget2" name="budget" value="35000-50000" style="margin-right: 8px;">
+            <label for="budget2" style="font-size: 1em; color: #333;">45 - 90 days</label>
+          </div>
+          
+          <div style="margin-bottom: 10px;">
+            <input type="radio" id="budget3" name="budget" value="50000-75000" style="margin-right: 8px;">
+            <label for="budget3" style="font-size: 1em; color: #333;">Choose the date below</label>
+          </div>
+          
+          <div style="margin-top: 10px; margin-bottom: 15px;">
+            <input type="date" id="calendar-input" placeholder="Calendar" style="
+                width: 100%; 
+                padding: 10px; 
+                border: 1px solid #ccc; 
+                border-radius: 5px; 
+                font-size: 1em;">
+          </div>
+        </div>
+        </div>
+    
+    
+     <!-- Section 7: Details -->
+     <div class="form-section d-none" style="padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <div style="
+          display: flex; 
+          flex-wrap: wrap; 
+          gap: 20px; 
+          justify-content: center; 
+          align-items: flex-start;
+          max-width: 100%; 
+          margin: auto;">
+        <!-- Form Section -->
+        <div style="
+            flex: 1; 
+            min-width: 280px; 
+            max-width: 100%; 
+            padding-right: 20px;">
+          <div style="margin-bottom: 15px;">
+            <label for="kitchen-area" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
+              Name
+            </label>
+            <input type="text" id="kitchen-area" style="
+                width: 100%; 
+                padding: 10px; 
+                border: 1px solid #ccc; 
+                border-radius: 5px; 
+                font-size: 0.9em;">
+          </div>
+          <div style="margin-bottom: 15px;">
+            <label for="kitchen-dimensions" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
+              Contact
+            </label>
+            <input type="text" id="kitchen-dimensions" style="
+                width: 100%; 
+                padding: 10px; 
+                border: 1px solid #ccc; 
+                border-radius: 5px; 
+                font-size: 0.9em;">
+          </div>
+          <div style="margin-bottom: 15px;">
+            <label for="message" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
+              Message
+            </label>
+            <input type="text" id="message" style="
+                width: 100%; 
+                padding: 10px; 
+                border: 1px solid #ccc; 
+                border-radius: 5px; 
+                font-size: 0.9em;">
+          </div>
+          <div style="display: flex; align-items: center; margin-bottom: 15px;">
+            <input type="file" id="file-input" style="font-size: 1em; margin-right: 10px;">
+          </div>
+        </div>
+        <!-- Image Section -->
+        <div style="
+            flex: 1; 
+            min-width: 280px; 
+            max-width: 100%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            border-radius: 8px; 
+            overflow: hidden;">
+          <img src="./img/drawing2.jpg" alt="Kitchen Design Plans" style="
+              width: 100%; 
+              height: auto; 
+              border-radius: 8px;">
+        </div>
+      </div>
+      </div>
+    
+            <!-- Navigation Buttons -->
+            <div class="mt-4 d-flex justify-content-between">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                id="prevButton"
+                disabled
+              >
+                Previous
+              </button>
+              <button type="button" class="btn btn-primary" id="nextButton">
+                Next
+              </button>
+            </div>
+          </form>
+        </div>
+
+
+
+
+        <!-- CLOSET SECTION -->
+        <div id="closetCalculator" class="container my-5 d-none">
+          <h1 class="text-center mb-4">CLOSETS PRICE CALCULATOR</h1>
+    
+          <form>
+            <!-- Section 1: Style -->
+            <div class="form-section">
+              <h3>Choose type of closet:</h3>
+              <div class="d-flex gap-5 flex-wrap">
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="style1"
+                    name="kitchenStyle"
+                    value="Luxury"
+                    hidden
+                  />
+                  <label for="style1" class="selectable-item">
+                    <img
+                      src="./img/closet-11.jpg"
+                      alt="Free-Standing Cabinets"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Open Closet Design</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="style2"
+                    name="kitchenStyle"
+                    value="Modern"
+                    hidden
+                  />
+                  <label for="style2" class="selectable-item">
+                    <img
+                      src="./img/closet-12.jpg"
+                      alt="Modern Kitchen"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Built-In Closets</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="style2"
+                    name="kitchenStyle"
+                    value="Modern"
+                    hidden
+                  />
+                  <label for="style2" class="selectable-item">
+                    <img
+                      src="./img/walkin.jpg"
+                      alt="classic style"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Walk-in Closets</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="style2"
+                    name="kitchenStyle"
+                    value="Modern"
+                    hidden
+                  />
+                  <label for="style2" class="selectable-item">
+                    <img
+                      src="./img/modern.jpg"
+                      alt="Modern Kitchen"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Modern Closets</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="style2"
+                    name="kitchenStyle"
+                    value="Modern"
+                    hidden
+                  />
+                  <label for="style2" class="selectable-item">
+                    <img
+                      src="./img/closet-13.jpg"
+                      alt="Modern Kitchen"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Luxury Closets</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="style3"
+                    name="kitchenStyle"
+                    value="Modern"
+                    hidden
+                  />
+                  <label for="style3" class="selectable-item">
+                    <img
+                      src="./img/other.png"
+                      alt="Mars"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Not Sure Yet</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Section 2: Material -->
+            <div class="form-section d-none">
+              <h3>Choose type of doors:</h3>
+              <div class="d-flex gap-5 flex-wrap">
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="material1"
+                    name="kitchenMaterial"
+                    value="Granite"
+                    hidden
+                  />
+                  <label for="material1" class="selectable-item">
+                    <img
+                      src="./img/sliding.jpg"
+                      alt="matte"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Sliding</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="material2"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="material2" class="selectable-item">
+                    <img
+                      src="./img/hinged.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Hinged</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="material3"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="material3" class="selectable-item">
+                    <img
+                      src="./img/nodoor.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>No Doors</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Section 3: Appliances -->
+            <div class="form-section d-none">
+              <h3>Choose type of material:</h3>
+              <div class="d-flex gap-5 flex-wrap">
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="type1"
+                    name="kitchenMaterial"
+                    value="Granite"
+                    hidden
+                  />
+                  <label for="type1" class="selectable-item">
+                    <img
+                      src="./img/matte.jpg"
+                      alt="matte"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Matte</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="type2"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="type2" class="selectable-item">
+                    <img
+                      src="./img/gloss.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Glossy</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="type3"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="type3" class="selectable-item">
+                    <img
+                      src="./img/wood.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Wood Texture</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="type4"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="type4" class="selectable-item">
+                    <img
+                      src="./img/stone.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Concrete Texture</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="type5"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="type5" class="selectable-item">
+                    <img
+                      src="./img/paneled.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Framed Doors</p>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="radio"
+                    id="type6"
+                    name="kitchenMaterial"
+                    value="Marble"
+                    hidden
+                  />
+                  <label for="type6" class="selectable-item">
+                    <img
+                      src="./img/glass.jpg"
+                      alt="Marble"
+                      width="300"
+                      height="200"
+                    />
+                    <p>Glass Doors</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Section 4: input -->
+            <div class="form-section d-none">
+              <div style="flex: 1; padding-right: 20px">
+                <div style="margin-bottom: 15px">
+                  <label
+                    for="kitchen-dimensions"
+                    style="
+                      display: block;
+                      font-size: 0.9em;
+                      color: #333;
+                      margin-bottom: 5px;
+                    "
+                  >
+                    Enter parametrs of your wardrobe
+                  </label>
+                  <input
+                    type="text"
+                    id="kitchen-dimensions"
+                    placeholder="Width/Depth/Height"
+                    style="
+                      width: 40%;
+                      padding: 10px;
+                      border: 1px solid #ccc;
+                      border-radius: 5px;
+                      font-size: 0.9em;
+                    "
+                  />
+                </div>
+                <div style="display: flex; align-items: center; font-size: 0.9em">
+                  <input
+                    type="checkbox"
+                    id="no-dimensions"
+                    style="margin-right: 8px"
+                  />
+                  <label for="no-dimensions" style="color: #333"
+                    >I don’t have dimensions yet</label
+                  >
+                </div>
+              </div>
+            </div>
+    
+            <!-- Section 5: date -->
+            <div class="form-section d-none" style="padding: 20px; display: flex; justify-content: center; align-items: center;">
+              <div style="
+                  width: 100%; 
+                  max-width: 400px; 
+                  background-color: white; 
+                  padding: 20px; 
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+                  border-radius: 8px;">
+                <h2 style="font-size: 1.2em; color: #333; margin-bottom: 15px; text-align: center;">When does your kitchen need to be installed?</h2>
+                
+                <div style="margin-bottom: 10px;">
+                  <input type="radio" id="budget1" name="budget" value="25000-35000" style="margin-right: 8px;">
+                  <label for="budget1" style="font-size: 1em; color: #333;">Within 45 days</label>
+                </div>
+                
+                <div style="margin-bottom: 10px;">
+                  <input type="radio" id="budget2" name="budget" value="35000-50000" style="margin-right: 8px;">
+                  <label for="budget2" style="font-size: 1em; color: #333;">45 - 90 days</label>
+                </div>
+                
+                <div style="margin-bottom: 10px;">
+                  <input type="radio" id="budget3" name="budget" value="50000-75000" style="margin-right: 8px;">
+                  <label for="budget3" style="font-size: 1em; color: #333;">Choose the date below</label>
+                </div>
+                
+                <div style="margin-top: 10px; margin-bottom: 15px;">
+                  <input type="date" id="calendar-input" placeholder="Calendar" style="
+                      width: 100%; 
+                      padding: 10px; 
+                      border: 1px solid #ccc; 
+                      border-radius: 5px; 
+                      font-size: 1em;">
+                </div>
+              </div>
+              </div>
+    
+            <!-- Section 6: Details -->
+            <div class="form-section d-none" style="padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div style="
+                  display: flex; 
+                  flex-wrap: wrap; 
+                  gap: 20px; 
+                  justify-content: center; 
+                  align-items: flex-start;
+                  max-width: 100%; 
+                  margin: auto;">
+                <!-- Form Section -->
+                <div style="
+                    flex: 1; 
+                    min-width: 280px; 
+                    max-width: 100%; 
+                    padding-right: 20px;">
+                  <div style="margin-bottom: 15px;">
+                    <label for="kitchen-area" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
+                      Name
+                    </label>
+                    <input type="text" id="kitchen-area" style="
+                        width: 100%; 
+                        padding: 10px; 
+                        border: 1px solid #ccc; 
+                        border-radius: 5px; 
+                        font-size: 0.9em;">
+                  </div>
+                  <div style="margin-bottom: 15px;">
+                    <label for="kitchen-dimensions" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
+                      Contact
+                    </label>
+                    <input type="text" id="kitchen-dimensions" style="
+                        width: 100%; 
+                        padding: 10px; 
+                        border: 1px solid #ccc; 
+                        border-radius: 5px; 
+                        font-size: 0.9em;">
+                  </div>
+                  <div style="margin-bottom: 15px;">
+                    <label for="message" style="display: block; font-size: 0.9em; color: #333; margin-bottom: 5px;">
+                      Message
+                    </label>
+                    <input type="text" id="message" style="
+                        width: 100%; 
+                        padding: 10px; 
+                        border: 1px solid #ccc; 
+                        border-radius: 5px; 
+                        font-size: 0.9em;">
+                  </div>
+                  <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <input type="file" id="file-input" style="font-size: 1em; margin-right: 10px;">
+                  </div>
+                </div>
+                <!-- Image Section -->
+                <div style="
+                    flex: 1; 
+                    min-width: 280px; 
+                    max-width: 100%; 
+                    display: flex; 
+                    align-items: center; 
+                    justify-content: center; 
+                    border-radius: 8px; 
+                    overflow: hidden;">
+                  <img src="./img/drawing2.jpg" alt="Kitchen Design Plans" style="
+                      width: 100%; 
+                      height: auto; 
+                      border-radius: 8px;">
+                </div>
+              </div>
+              </div>`
+    
+            <!-- Navigation Buttons -->
+            <div class="mt-4 d-flex justify-content-between">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                id="prevButton"
+                disabled
+              >
+                Previous
+              </button>
+              <button type="button" class="btn btn-primary" id="nextButton">
+                Next
+              </button>
+            </div>
+          </form>
+        </div>
+
+
+
+        
+ <!-- Quote Section -->
+ <div id="furnitureQuote" class="container my-5 d-none">
+  <div
+    style="
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    "
+  >
+    <!-- Image Section -->
+    <div style="flex: 1; min-width: 300px; padding: 10px">
+      <img
+        src="./img/furniturequote.jpg"
+        alt="Furniture Quote"
+        style="
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          border-radius: 8px;
+        "
+      />
+    </div>
+
+    <!-- Form Section -->
+    <div
+      style="
+        flex: 1;
+        padding: 40px;
+        background-color: #f7f7f7;
+        min-width: 300px;
+        box-sizing: border-box;
+      "
+    >
+      <h3
+        style="
+          color: #c8c4c4;
+          letter-spacing: 1px;
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        "
+      >
+        ESTIMATE
+      </h3>
+      <h1
+        style="
+          font-size: 32px;
+          color: #333;
+          font-weight: bold;
+          margin-bottom: 20px;
+          line-height: 1.2;
+        "
+      >
+        I NEED A QUOTE FOR MY OTHER FURNITURE 3D DESIGN
+      </h1>
+      <p
+        style="
+          font-size: 16px;
+          color: #555;
+          line-height: 1.5;
+          margin-bottom: 30px;
+        "
+      >
+        If you already have your furniture 3D design or found a picture of
+        your dream furniture from the internet, attach the image here to get a
+        quote for it.
+      </p>
+
+      <!-- Form Fields -->
+      <div
+        style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap"
+      >
+        <input
+          type="text"
+          placeholder="Name*"
+          style="
+            flex: 1;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-width: 200px;
+          "
+        />
+        <input
+          type="text"
+          placeholder="Phone number*"
+          style="
+            flex: 1;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-width: 200px;
+          "
+        />
+      </div>
+      <span
+        style="
+          font-size: 10px;
+          color: #c8c4c4;
+          display: block;
+          margin-bottom: 15px;
+        "
+        >MANDATORY FIELD</span
+      >
+
+      <textarea
+        placeholder="Message details"
+        style="
+          width: 100%;
+          padding: 10px;
+          font-size: 14px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          height: 80px;
+          margin-bottom: 15px;
+          resize: none;
+        "
+      ></textarea>
+
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 30px;
+        "
+      >
+        <input
+          type="file"
+          id="file-input"
+          style="
+            font-size: 14px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            flex: 1;
+          "
+        />
+      </div>
+
+      <button
+        style="
+          width: 100%;
+          padding: 12px;
+          font-size: 16px;
+          font-weight: bold;
+          color: #fff;
+          background-color: #7f7f7f;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        "
+      >
+        GET ESTIMATE
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+      </div>
     </div>
     <!-- Contact End -->
 
@@ -409,5 +1695,30 @@
     window.open(whatsappURL, '_blank');
   }
 </script>
+
+
+<script>
+  function toggleCalculator() {
+    const serviceDropdown = document.getElementById("userService");
+    const kitchenCalculator = document.getElementById("kitchenCalculator");
+    const closetCalculator = document.getElementById("closetCalculator");
+    const furnitureQuote = document.getElementById("furnitureQuote");
+
+    // Hide all sections initially
+    kitchenCalculator.classList.add("d-none");
+    closetCalculator.classList.add("d-none");
+    furnitureQuote.classList.add("d-none");
+
+    // Show specific section based on selected value
+    if (serviceDropdown.value === "kitchens") {
+      kitchenCalculator.classList.remove("d-none");
+    } else if (serviceDropdown.value === "closets") {
+      closetCalculator.classList.remove("d-none");
+    } else if (serviceDropdown.value === "furniture") {
+      furnitureQuote.classList.remove("d-none");
+    }
+  }
+</script>
+
   </body>
 </html>
