@@ -143,43 +143,79 @@
       <h4 class="section-title">Enquiry</h4>
       <h1 class="display-5 mb-4">Got questions? We're here to help—reach out to us anytime!</h1>
     </div>
-    <div class="row g-5">
-      <div class="col-lg-6">
-        <p class="mb-4">
-          Our Professional Architects and Interior Designers have a unique creative vision of how your dream space will work the best for you. Learn more about our services and contact us.
-        </p>
-
-        <!-- Enquiry Form -->
-        <div class="row g-3">
-          <div class="col-12 col-sm-6">
-            <input type="text" class="form-control" id="userName" placeholder="Your Name" style="height: 55px;" />
-          </div>
-          <div class="col-12 col-sm-6">
-            <input type="email" class="form-control" id="userEmail" placeholder="Your Email" style="height: 55px;" />
-          </div>
-          <div class="col-12 col-sm-6">
-            <input type="text" class="form-control" id="userMobile" placeholder="Your Mobile" style="height: 55px;" />
-          </div>
-          <div class="col-12 col-sm-6">
-            <select class="form-select" id="userService" style="height: 55px;" onchange="toggleCalculator()">
-              <option selected value="">Choose Service</option>
-              <option value="kitchens">Kitchens</option>
-              <option value="closets">Closets</option>
-              <option value="furniture">Other Furniture</option>
-              <option value="entertainment">TV Wall</option>
-              <option value="cladding">KidsRoom</option>
-              <option value="maintenance">Vanities</option>
-              <option value="design">Other Services</option>
-            </select>
-          </div>
-          <div class="col-12">
-            <button class="btn btn-primary w-100 py-3" onclick="sendWhatsAppMessage()">
-              Book Appointment
-            </button>
-          </div>
-        </div>
+    <div
+  style="
+    display: flex;
+    justify-content: center; /* Horizontally centers the form */
+    align-items: flex-start; /* Aligns the form to the top, not vertically centered * "
+>
+  <div
+    style="
+      max-width: 600px;
+      width: 100%;
+      background-color: #fff; 
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    "
+  >
+    <div class="row g-3">
+      <div class="col-12 col-sm-6">
+        <input
+          type="text"
+          class="form-control"
+          id="userName"
+          placeholder="Your Name"
+          style="height: 55px;"
+        />
+      </div>
+      <div class="col-12 col-sm-6">
+        <input
+          type="email"
+          class="form-control"
+          id="userEmail"
+          placeholder="Your Email"
+          style="height: 55px;"
+        />
+      </div>
+      <div class="col-12 col-sm-6">
+        <input
+          type="text"
+          class="form-control"
+          id="userMobile"
+          placeholder="Your Mobile"
+          style="height: 55px;"
+        />
+      </div>
+      <div class="col-12 col-sm-6">
+        <select
+          class="form-select"
+          id="userService"
+          style="height: 55px;"
+          onchange="toggleCalculator()"
+        >
+          <option selected value="">Choose Service</option>
+          <option value="kitchens">Kitchens</option>
+          <option value="closets">Closets</option>
+          <option value="furniture">Other Furniture</option>
+          <option value="tvWall">TV Wall</option>
+          <option value="kidsRoom">KidsRoom</option>
+          <option value="vanities">Vanities</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <button
+          class="btn btn-primary w-100 py-3"
+          onclick="sendWhatsAppMessage()"
+        >
+          Book Appointment
+        </button>
       </div>
     </div>
+  </div>
+</div>
+
         <!-- Kitchen Price Calculator -->
         <div id="kitchenCalculator" class="container my-5 d-none">
           <h1 class="text-center mb-4">KITCHEN PRICE CALCULATOR</h1>
@@ -1341,7 +1377,7 @@
 
 
         
- <!-- Quote Section -->
+ <!-- Furniture Section -->
  <div id="furnitureQuote" class="container my-5 d-none">
   <div
     style="
@@ -1506,6 +1542,168 @@
   </div>
 </div>
 
+
+
+<!-- TV Wall sections -->
+<div id="tvWallQuote" class="container my-5 d-none">
+<div style="display: flex; flex-wrap: wrap; max-width: 1200px; width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+
+  <!-- Image Section -->
+  <div style="flex: 1; min-width: 300px; padding: 10px;">
+      <img src="./img/tvwall-12.jpg" alt="TV Wall Design" style="width: 100%; height: auto; object-fit: cover; border-radius: 8px;">
+  </div>
+
+  <!-- Form Section -->
+  <div style="flex: 1; padding: 40px; background-color: #f7f7f7; min-width: 300px; box-sizing: border-box;">
+      <h3 style="color: #c8c4c4; letter-spacing: 1px; font-size: 14px; font-weight: bold; margin-bottom: 10px;">ESTIMATE</h3>
+      <h1 style="font-size: 32px; color: #333; font-weight: bold; margin-bottom: 20px; line-height: 1.2;">I NEED A QUOTE FOR MY TV WALL 3D DESIGN</h1>
+      <p style="font-size: 16px; color: #555; line-height: 1.5; margin-bottom: 30px;">
+          If you already have your TV wall 3D design or found a picture of your dream TV wall furniture from the internet, attach the image here to get a quote for it.
+      </p>
+
+      <!-- Form Fields -->
+      <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+          <input type="text" placeholder="Name*" style="flex: 1; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; min-width: 200px;">
+          <input type="text" placeholder="Phone number*" style="flex: 1; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; min-width: 200px;">
+      </div>
+      <span style="font-size: 10px; color: #c8c4c4; display: block; margin-bottom: 15px;">MANDATORY FIELD</span>
+
+      <textarea placeholder="Message details" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; height: 80px; margin-bottom: 15px; resize: none;"></textarea>
+
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px;">
+          <input type="file" id="file-input" style="font-size: 14px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; flex: 1;">
+      </div>
+
+      <button style="width: 100%; padding: 12px; font-size: 16px; font-weight: bold; color: #fff; background-color: #7F7F7F; border: none; border-radius: 4px; cursor: pointer;">
+          GET ESTIMATE
+      </button>
+  </div>
+  </div>
+</div>
+
+
+
+
+<!-- Kids room section -->
+<div id="kidsRoomQuote" class="container my-5 d-none">
+<div style="display: flex; flex-wrap: wrap; max-width: 1200px; width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+
+  <!-- Image Section -->
+  <div style="flex: 1; min-width: 300px; padding: 10px;">
+      <img src="./img/kidsquote.jpg" alt="TV Wall Design" style="width: 100%; height: auto; object-fit: cover; border-radius: 8px;">
+  </div>
+
+  <!-- Form Section -->
+  <div style="flex: 1; padding: 40px; background-color: #f7f7f7; min-width: 300px; box-sizing: border-box;">
+      <h3 style="color: #c8c4c4; letter-spacing: 1px; font-size: 14px; font-weight: bold; margin-bottom: 10px;">ESTIMATE</h3>
+      <h1 style="font-size: 32px; color: #333; font-weight: bold; margin-bottom: 20px; line-height: 1.2;">I NEED A QUOTE FOR MY KIDS ROOM 3D DESIGN
+      </h1>
+      <p style="font-size: 16px; color: #555; line-height: 1.5; margin-bottom: 30px;">
+        If you already have your Kids room 3D design or found a picture of your dream Kids room furniture from the internet, attach the image here to get a quote for it.
+      </p>
+
+      <!-- Form Fields -->
+      <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+          <input type="text" placeholder="Name*" style="flex: 1; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; min-width: 200px;">
+          <input type="text" placeholder="Phone number*" style="flex: 1; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; min-width: 200px;">
+      </div>
+      <span style="font-size: 10px; color: #c8c4c4; display: block; margin-bottom: 15px;">MANDATORY FIELD</span>
+
+      <textarea placeholder="Message details" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; height: 80px; margin-bottom: 15px; resize: none;"></textarea>
+
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px;">
+          <input type="file" id="file-input" style="font-size: 14px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; flex: 1;">
+         
+      </div>
+
+      <button style="width: 100%; padding: 12px; font-size: 16px; font-weight: bold; color: #fff; background-color: #7F7F7F; border: none; border-radius: 4px; cursor: pointer;">
+          GET ESTIMATE
+      </button>
+  </div>
+</div>
+</div>
+
+
+
+
+<!-- Vanities -->
+<div id="vanitiesQuote" class="container my-5 d-none">
+<div style="display: flex; flex-wrap: wrap; max-width: 1200px; width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+
+  <!-- Image Section -->
+  <div style="flex: 1; min-width: 300px; padding: 10px;">
+      <img src="./img/vanity-13.jpg" alt="TV Wall Design" style="width: 100%; height: auto; object-fit: cover; border-radius: 8px;">
+  </div>
+
+  <!-- Form Section -->
+  <div style="flex: 1; padding: 40px; background-color: #f7f7f7; min-width: 300px; box-sizing: border-box;">
+      <h3 style="color: #c8c4c4; letter-spacing: 1px; font-size: 14px; font-weight: bold; margin-bottom: 10px;">ESTIMATE</h3>
+      <h1 style="font-size: 32px; color: #333; font-weight: bold; margin-bottom: 20px; line-height: 1.2;">I NEED A QUOTE FOR MY BATHROOM VANITY 3D DESIGN
+      </h1>
+      <p style="font-size: 16px; color: #555; line-height: 1.5; margin-bottom: 30px;">
+        If you already have your bathroom vanity 3D design or found a picture of your dream bathroom vanity furniture from the internet, attach the image here to get a quote for it.
+      </p>
+
+      <!-- Form Fields -->
+      <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+          <input type="text" placeholder="Name*" style="flex: 1; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; min-width: 200px;">
+          <input type="text" placeholder="Phone number*" style="flex: 1; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; min-width: 200px;">
+      </div>
+      <span style="font-size: 10px; color: #c8c4c4; display: block; margin-bottom: 15px;">MANDATORY FIELD</span>
+
+      <textarea placeholder="Message details" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; height: 80px; margin-bottom: 15px; resize: none;"></textarea>
+
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px;">
+          <input type="file" id="file-input" style="font-size: 14px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; flex: 1;">
+      </div>
+
+      <button style="width: 100%; padding: 12px; font-size: 16px; font-weight: bold; color: #fff; background-color: #7F7F7F; border: none; border-radius: 4px; cursor: pointer;">
+          GET ESTIMATE
+      </button>
+  </div>
+</div>
+</div>
+
+
+
+
+<!-- other  -->
+<div id="otherQuote" class="container my-5 d-none">
+  <div style="display: flex; flex-wrap: wrap; max-width: 1200px; width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+  
+    <!-- Image Section -->
+    <div style="flex: 1; min-width: 300px; padding: 10px;">
+        <img src="./img/closet-13.jpg" alt="other" style="width: 100%; height: auto; object-fit: cover; border-radius: 8px;">
+    </div>
+  
+    <!-- Form Section -->
+    <div style="flex: 1; padding: 40px; background-color: #f7f7f7; min-width: 300px; box-sizing: border-box;">
+        <h3 style="color: #c8c4c4; letter-spacing: 1px; font-size: 14px; font-weight: bold; margin-bottom: 10px;">ESTIMATE</h3>
+        <h1 style="font-size: 32px; color: #333; font-weight: bold; margin-bottom: 20px; line-height: 1.2;">I NEED A QUOTE FOR OTHER 3D DESIGNs
+        </h1>
+        <p style="font-size: 16px; color: #555; line-height: 1.5; margin-bottom: 30px;">
+          If you already have your 3D design or found pictures of your dream design from the internet, attach the image here to get a quote for it.
+        </p>
+  
+        <!-- Form Fields -->
+        <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+            <input type="text" placeholder="Name*" style="flex: 1; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; min-width: 200px;">
+            <input type="text" placeholder="Phone number*" style="flex: 1; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; min-width: 200px;">
+        </div>
+        <span style="font-size: 10px; color: #c8c4c4; display: block; margin-bottom: 15px;">MANDATORY FIELD</span>
+  
+        <textarea placeholder="Message details" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; height: 80px; margin-bottom: 15px; resize: none;"></textarea>
+  
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px;">
+            <input type="file" id="file-input" style="font-size: 14px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; flex: 1;">
+        </div>
+  
+        <button style="width: 100%; padding: 12px; font-size: 16px; font-weight: bold; color: #fff; background-color: #7F7F7F; border: none; border-radius: 4px; cursor: pointer;">
+            GET ESTIMATE
+        </button>
+    </div>
+  </div>
+  </div>
 
 
       </div>
@@ -1676,6 +1874,7 @@
     const mobile = document.getElementById('userMobile').value;
     const service = document.getElementById('userService').value;
     const message = document.getElementById('userMessage').value;
+    
 
     // Construct WhatsApp message
     const whatsappMessage = `Hi, I would like to book an appointment.
@@ -1703,11 +1902,21 @@
     const kitchenCalculator = document.getElementById("kitchenCalculator");
     const closetCalculator = document.getElementById("closetCalculator");
     const furnitureQuote = document.getElementById("furnitureQuote");
+    const tvWallQuote = document.getElementById("tvWallQuote");
+    const kidsRoomQuote = document.getElementById("kidsRoomQuote");
+    const vanitiesQuote = document.getElementById("vanitiesQuote");
+    const otherQuote = document.getElementById("otherQuote");
+
 
     // Hide all sections initially
     kitchenCalculator.classList.add("d-none");
     closetCalculator.classList.add("d-none");
     furnitureQuote.classList.add("d-none");
+    tvWallQuote.classList.add("d-none");
+    kidsRoomQuote.classList.add("d-none");
+    vanitiesQuote.classList.add("d-none");
+    otherQuote.classList.add("d-none");
+
 
     // Show specific section based on selected value
     if (serviceDropdown.value === "kitchens") {
@@ -1716,8 +1925,17 @@
       closetCalculator.classList.remove("d-none");
     } else if (serviceDropdown.value === "furniture") {
       furnitureQuote.classList.remove("d-none");
-    }
+    }else if (serviceDropdown.value === "tvWall") {
+      tvWallQuote.classList.remove("d-none");
+  }else if (serviceDropdown.value === "kidsRoom") {
+    kidsRoomQuote.classList.remove("d-none");{}
+   }else if (serviceDropdown.value === "vanities") {
+      vanitiesQuote.classList.remove("d-none");
+  }else if (serviceDropdown.value === "other") {
+      otherQuote.classList.remove("d-none");
   }
+}
+  
 </script>
 
   </body>
