@@ -354,6 +354,10 @@ h6,
     background-image: url('../img/furniturehead.jpg');
 }
 
+.enquiry-header {
+    background-image: url('../img/choose-2.jpg');
+}
+
 
 .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
