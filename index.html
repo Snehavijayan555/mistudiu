@@ -41,6 +41,27 @@
 
     <!-- Template Stylesheet -->
     <link href="./css/style.css" rel="stylesheet" />
+
+
+    <style>
+      /* Ensures all images have the same size and are aligned properly */
+      .project img {
+        width: 100%; /* Full width within the parent container */
+        height: 100%; /* Matches the height of the container */
+        object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+        border-radius: 10px; /* Optional: Adds rounded corners for a polished look */
+      }
+    
+      .project .position-relative {
+        height: 350px; /* Ensures a consistent height for all image containers */
+      }
+    
+      .project .tab-pane .row {
+        align-items: center; /* Ensures text and images align vertically */
+      }
+    </style>
+
+
   </head>
 
   <body>
@@ -144,7 +165,7 @@
         <a href="./contact.html" class="nav-item nav-link">Contact</a>
       </div>
 
-      <a href="https://wa.me/971569937768?text=Hi" class="btn btn-primary" role="button" style="margin-left: 20px;">+971569937768</a>
+      <a href="https://wa.me/971569937768?text=Hi" class="btn btn-primary" role="button">+971569937768</a>
     </div>
   </nav>
     <!-- Navbar End -->
@@ -543,145 +564,97 @@
     <!-- Project Start -->
     <div class="container-xxl project py-5">
       <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 600px"
-        >
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
           <h4 class="section-title">Our Projects</h4>
-          <h1 class="display-5 mb-4">
-            Visit Our Latest Projects And Our Innovative Works
-          </h1>
+          <h1 class="display-5 mb-4">Visit Our Latest Projects And Our Innovative Works</h1>
         </div>
         <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
           <div class="col-lg-4">
-            <div
-              class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4"
-            >
-              <button
-                class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active"
-                data-bs-toggle="pill"
-                data-bs-target="#tab-pane-1"
-                type="button"
-              >
+            <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
+              <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
                 <h3 class="m-0">01. Modern Luxury</h3>
               </button>
-              <button
-                class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
-                data-bs-toggle="pill"
-                data-bs-target="#tab-pane-2"
-                type="button"
-              >
+              <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
                 <h3 class="m-0">02. Minimalist</h3>
               </button>
-              <button
-                class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
-                data-bs-toggle="pill"
-                data-bs-target="#tab-pane-3"
-                type="button"
-              >
+              <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
                 <h3 class="m-0">03. Modern Industrial</h3>
               </button>
-              <button
-                class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0"
-                data-bs-toggle="pill"
-                data-bs-target="#tab-pane-4"
-                type="button"
-              >
+              <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
                 <h3 class="m-0">04. Modern Classic</h3>
               </button>
             </div>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-8" style="display: flex; align-items: center;">
             <div class="tab-content w-100">
+              <!-- Tab 1 -->
               <div class="tab-pane fade show active" id="tab-pane-1">
                 <div class="row g-4">
-                  <div class="col-md-6" style="min-height: 350px">
-                    <div class="position-relative h-100">
-                      <img
-                        class="position-absolute img-fluid w-100 h-100"
-                        src="./img/marinaresidence/IMG-20241121-WA0005.jpg"
-                        style="object-fit: cover"
-                        alt=""
-                      />
+                  <div class="col-md-6">
+                    <div class="position-relative">
+                      <img src="./img/marinaresidence/IMG-20241121-WA0005.jpg" alt="Modern Luxury Project" />
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <h1 class="mb-3">
-                      30 Years Of Experience In Architecture Industry
-                    </h1>
+                    <h1 class="mb-3">30 Years Of Experience In Architecture Industry</h1>
                     <p class="mb-4">
-                      One of our latest projects in Palm Jumeirah provides a modern luxury interior design seamlessly, blending sleek minimalism with opulent elegance, and creating spaces that are both sophisticated and inviting It emphasizes clean lines, open layouts, and the use of high-quality materials to evoke a sense of refined luxury.
+                      One of our latest projects in Palm Jumeirah provides a modern luxury interior design seamlessly blending sleek minimalism with opulent elegance, and creating spaces that are both sophisticated and inviting.
                     </p>
                   </div>
                 </div>
               </div>
+    
+              <!-- Tab 2 -->
               <div class="tab-pane fade" id="tab-pane-2">
                 <div class="row g-4">
-                  <div class="col-md-6" style="min-height: 350px">
-                    <div class="position-relative h-100">
-                      <img
-                        class="position-absolute img-fluid w-100 h-100"
-                        src="./img/Jumeirah Parks/IMG-20241109-WA0077.jpg"
-                        style="object-fit: cover"
-                        alt=""
-                      />
+                  <div class="col-md-6">
+                    <div class="position-relative">
+                      <img src="./img/Jumeirah Parks/IMG-20241109-WA0077.jpg" alt="Minimalist Project" />
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <h1 class="mb-3">
-                      30 Years Of Experience In Architecture Industry
-                    </h1>
+                    <h1 class="mb-3">30 Years Of Experience In Architecture Industry</h1>
                     <p class="mb-4">
-                      Golf Tower project best describes minimalist interior design as all simplicity, clean lines, and a focus on functionality. It's a style that emphasizes the use of space and light, creating a sense of calm and serenity.
+                      Golf Tower project best describes minimalist interior design as all simplicity, clean lines, and a focus on functionality.
                     </p>
                   </div>
                 </div>
               </div>
+    
+              <!-- Tab 3 -->
               <div class="tab-pane fade" id="tab-pane-3">
                 <div class="row g-4">
-                  <div class="col-md-6" style="min-height: 350px">
-                    <div class="position-relative h-100">
-                      <img
-                        class="position-absolute img-fluid w-100 h-100"
-                        src="./img/Madina Tower/IMG-20241109-WA0054.jpg"
-                        style="object-fit: cover"
-                        alt=""
-                      />
+                  <div class="col-md-6">
+                    <div class="position-relative">
+                      <img src="./img/Madina Tower/IMG-20241109-WA0054.jpg" alt="Modern Industrial Project" />
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <h1 class="mb-3">
-                      30 Years Of Experience In Architecture Industry
-                    </h1>
+                    <h1 class="mb-3">30 Years Of Experience In Architecture Industry</h1>
                     <p class="mb-4">
-                      Madina Tower Project provides modern industrial interiors blending the raw, rugged elements of industrial design with the sleek lines and functionality of modern aesthetics. This style is characterized by darker tones, metal accents, and raw feel like materials, which provide a stark and minimalist backdrop. These elements are often contrasted with clean lines, minimalist furniture, and pops of colour to create a stylish and inviting space.
+                      Madina Tower Project provides modern industrial interiors blending the raw, rugged elements of industrial design with the sleek lines and functionality of modern aesthetics.
                     </p>
                   </div>
                 </div>
               </div>
+    
+              <!-- Tab 4 -->
               <div class="tab-pane fade" id="tab-pane-4">
                 <div class="row g-4">
-                  <div class="col-md-6" style="min-height: 350px">
-                    <div class="position-relative h-100">
-                      <img
-                        class="position-absolute img-fluid w-100 h-100"
-                        src="./img/The Sundials/IMG-20241109-WA0134.jpg"
-                        style="object-fit: cover"
-                        alt=""
-                      />
+                  <div class="col-md-6">
+                    <div class="position-relative">
+                      <img src="./img/The Sundials/IMG-20241109-WA0134.jpg" alt="Modern Classic Project" />
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <h1 class="mb-3">
-                      30 Years Of Experience In Architecture Industry
-                    </h1>
+                    <h1 class="mb-3">30 Years Of Experience In Architecture Industry</h1>
                     <p class="mb-4">
-                      Another latest project at Jumeirah Golf Estates, which provides modern classic interior design, seamlessly blends the timeless elegance of traditional aesthetics with the clean lines and functionality of contemporary design. It's a style that values both beauty and practicality, creating spaces that are both sophisticated and inviting.
+                      Another latest project at Jumeirah Golf Estates, which provides modern classic interior design, seamlessly blends the timeless elegance of traditional aesthetics with the clean lines and functionality of contemporary design.
                     </p>
                   </div>
                 </div>
               </div>
+    
             </div>
           </div>
         </div>
@@ -1006,7 +979,7 @@
     class="container-fluid bg-dark text-body footer px-0 wow ">
     <div class="container py-3">
       <div class="row g-3">
-        <div class="d-flex justify-content-between copyright">
+        <div class="d-flex justify-content-between">
           <div class="col-lg-3 col-md-6">
             <h3 class="text-light mb-4">Services</h3>
             <a class="btn btn-link" href="./kitchens.html">Kitchens</a>
