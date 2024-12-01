@@ -54,6 +54,10 @@ h6,
  font-family: DmSans-Heading !important;
 }
 
+.navbar-nav {
+    align-items: center;
+}
+
 
 /*** Spinner ***/
 #spinner {
@@ -206,6 +210,10 @@ h6,
 
     .header-carousel .owl-carousel-item p {
         font-size: 16px !important;
+    }
+
+    .navbar-nav {
+        align-items: start;
     }
 }
 
