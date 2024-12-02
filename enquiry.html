@@ -55,7 +55,7 @@
         transition: border-color 0.3s;
       }
       .selectable-item:hover {
-        border-color: #007bff;
+        border-color: #7f7f7f
       }
     </style>
   </head>
@@ -241,7 +241,7 @@
             <!-- Section 1: Style -->
             <div class="form-section">
               <h3>Choose your kitchen Style</h3>
-              <div class="d-flex gap-5 flex-wrap">
+              <div class="d-flex gap-5 flex-wrap" style="text-align: center; justify-content: center;">
                 <div class="text-center">
                   <input
                     type="radio"
@@ -356,7 +356,7 @@
             <!-- Section 2: Material -->
             <div class="form-section d-none">
               <h3>Choose your facades type</h3>
-              <div class="d-flex gap-5 flex-wrap">
+              <div class="d-flex gap-5 flex-wrap" style="text-align: center; justify-content: center;">
                 <div class="text-center">
                   <input
                     type="radio"
@@ -471,7 +471,7 @@
             <!-- Section 3: Appliances -->
             <div class="form-section d-none">
               <h3>Choose your kitchen layout type</h3>
-              <div class="d-flex gap-5 flex-wrap">
+              <div class="d-flex gap-5 flex-wrap" style="text-align: center; justify-content: center;">
                 <div class="text-center">
                   <input
                     type="radio"
@@ -623,7 +623,7 @@
             <!-- Section 4: Material -->
             <div class="form-section d-none">
               <h3>Choose material for a worktop and (if needed) backsplash</h3>
-              <div class="d-flex gap-5 flex-wrap">
+              <div class="d-flex gap-5 flex-wrap" style="text-align: center; justify-content: center;">
                 <div class="text-center">
                   <input
                     type="radio"
@@ -701,12 +701,13 @@
 
             <!-- Section 5: Input -->
             <div
-              class="form-section d-none"
+              class="form-section d-none" 
               style="
                 background-color: white;
                 padding: 20px;
                 border-radius: 8px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                
               "
             >
               <div
@@ -851,12 +852,14 @@
 
             <!-- Section 6: Date -->
             <div
-              class="form-section d-none"
+              class="form-section d-none d-flex"
               style="
                 padding: 20px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                align-items: center;
+                justify-content: center;
               "
             >
               <div
@@ -1076,15 +1079,10 @@
 
             <!-- Navigation Buttons -->
             <div class="mt-4 d-flex justify-content-between">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                id="prevButton"
-                disabled
-              >
+              <button type="button" class="btn btn-secondary" id="kitchenPrevButton" disabled>
                 Previous
               </button>
-              <button type="button" class="btn btn-primary" id="nextButton">
+              <button type="button" class="btn btn-primary" id="kitchenNextButton">
                 Next
               </button>
             </div>
@@ -1099,7 +1097,7 @@
             <!-- Section 1: Style -->
             <div class="form-section">
               <h3>Choose type of closet:</h3>
-              <div class="d-flex gap-5 flex-wrap">
+              <div class="d-flex gap-5 flex-wrap" style="text-align: center; justify-content: center;">
                 <div class="text-center">
                   <input
                     type="radio"
@@ -1214,7 +1212,7 @@
             <!-- Section 2: Material -->
             <div class="form-section d-none">
               <h3>Choose type of doors:</h3>
-              <div class="d-flex gap-5 flex-wrap">
+              <div class="d-flex gap-5 flex-wrap" style="text-align: center; justify-content: center;">
                 <div class="text-center">
                   <input
                     type="radio"
@@ -1275,7 +1273,7 @@
             <!-- Section 3: Appliances -->
             <div class="form-section d-none">
               <h3>Choose type of material:</h3>
-              <div class="d-flex gap-5 flex-wrap">
+              <div class="d-flex gap-5 flex-wrap" style="text-align: center; justify-content: center;">
                 <div class="text-center">
                   <input
                     type="radio"
@@ -1388,47 +1386,56 @@
             </div>
 
             <!-- Section 4: input -->
-            <div class="form-section d-none">
-              <div style="flex: 1; padding-right: 20px">
-                <div style="margin-bottom: 15px">
-                  <label
-                    for="kitchen-dimensions"
-                    style="
-                      display: block;
-                      font-size: 0.9em;
-                      color: #333;
-                      margin-bottom: 5px;
-                    "
-                  >
-                    Enter parametrs of your wardrobe
-                  </label>
-                  <input
-                    type="text"
-                    id="kitchen-dimensions"
-                    placeholder="Width/Depth/Height"
-                    style="
-                      width: 40%;
-                      padding: 10px;
-                      border: 1px solid #ccc;
-                      border-radius: 5px;
-                      font-size: 0.9em;
-                    "
-                  />
-                </div>
-                <div
-                  style="display: flex; align-items: center; font-size: 0.9em"
+            <div
+            class="form-section d-none"
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              box-sizing: border-box; /* Ensure padding and borders are included in the size */
+            "
+          >
+            <div style="flex: 1; max-width: 500px; ">
+              <div style="margin-bottom: 15px;">
+                <label
+                  for="kitchen-dimensions"
+                  style="
+                    display: block;
+                    font-size: 0.9em;
+                    color: #333;
+                    margin-bottom: 5px;
+                  "
                 >
-                  <input
-                    type="checkbox"
-                    id="no-dimensions"
-                    style="margin-right: 8px"
-                  />
-                  <label for="no-dimensions" style="color: #333"
-                    >I don’t have dimensions yet</label
-                  >
-                </div>
+                  Enter parameters of your wardrobe
+                </label>
+                <input
+                  type="text"
+                  id="kitchen-dimensions"
+                  placeholder="Width/Depth/Height"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 0.9em;
+                  "
+                />
+              </div>
+              <div
+                style=" font-size: 0.9em; justify-content: center;"
+              >
+                <input
+                  type="checkbox"
+                  id="no-dimensions"
+                  style="margin-right: 8px;"
+                />
+                <label for="no-dimensions" style="color: #333;"
+                  >I don’t have dimensions yet</label
+                >
               </div>
             </div>
+          </div>
+          
 
             <!-- Section 5: date -->
             <div
@@ -1658,15 +1665,10 @@
 
             <!-- Navigation Buttons -->
             <div class="mt-4 d-flex justify-content-between">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                id="prevButton"
-                disabled
-              >
+              <button type="button" class="btn btn-secondary" id="closetPrevButton" disabled>
                 Previous
               </button>
-              <button type="button" class="btn btn-primary" id="nextButton">
+              <button type="button" class="btn btn-primary" id="closetNextButton">
                 Next
               </button>
             </div>
@@ -2751,46 +2753,52 @@
       }
     </script>
 
-    <script>
-      const sections = document.querySelectorAll(".form-section");
-      let currentSectionIndex = 0;
+<script>
+  function initializeCalculator(calculatorId, prevButtonId, nextButtonId) {
+    const calculator = document.getElementById(calculatorId);
+    const sections = calculator.querySelectorAll(".form-section");
+    const nextButton = document.getElementById(nextButtonId);
+    const prevButton = document.getElementById(prevButtonId);
 
-      const nextButton = document.getElementById("nextButton");
-      const prevButton = document.getElementById("prevButton");
+    let currentSectionIndex = 0;
 
-      // Function to show the current section based on index
-      function showSection(index) {
-        sections.forEach((section, i) => {
-          section.classList.toggle("d-none", i !== index);
-        });
+    // Function to show the current section
+    function showSection(index) {
+      sections.forEach((section, i) => {
+        section.classList.toggle("d-none", i !== index);
+      });
+      prevButton.disabled = index === 0;
+      nextButton.textContent = index === sections.length - 1 ? "Submit" : "Next";
+    }
 
-        // Update button states
-        prevButton.disabled = index === 0;
-        nextButton.textContent =
-          index === sections.length - 1 ? "Submit" : "Next";
+    // Next button event
+    nextButton.addEventListener("click", () => {
+      if (currentSectionIndex < sections.length - 1) {
+        currentSectionIndex++;
+        showSection(currentSectionIndex);
+      } else {
+        alert("Form submitted!");
       }
+    });
 
-      // Next button event
-      nextButton.addEventListener("click", () => {
-        if (currentSectionIndex < sections.length - 1) {
-          currentSectionIndex++;
-          showSection(currentSectionIndex);
-        } else {
-          // Submit the form on the final step
-          alert("Form submitted!");
-        }
-      });
+    // Previous button event
+    prevButton.addEventListener("click", () => {
+      if (currentSectionIndex > 0) {
+        currentSectionIndex--;
+        showSection(currentSectionIndex);
+      }
+    });
 
-      // Previous button event
-      prevButton.addEventListener("click", () => {
-        if (currentSectionIndex > 0) {
-          currentSectionIndex--;
-          showSection(currentSectionIndex);
-        }
-      });
+    // Initialize the first section
+    showSection(currentSectionIndex);
+  }
 
-      // Initialize the first section
-      showSection(currentSectionIndex);
-    </script>
+  // Initialize both calculators
+  initializeCalculator("kitchenCalculator", "kitchenPrevButton", "kitchenNextButton");
+  initializeCalculator("closetCalculator", "closetPrevButton", "closetNextButton");
+</script>
+
+
+
   </body>
 </html>
